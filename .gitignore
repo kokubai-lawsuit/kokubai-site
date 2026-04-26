@@ -1,0 +1,33 @@
+# ── Local-only admin tool (never commit) ───────────────────────────
+admin.html
+admin/
+*.admin.html
+
+# ── PDFs (commit selectively if needed) ────────────────────────────
+# 訴状などの大きなバイナリは Git LFS か別配信を検討してください。
+# 公開する PDF を入れる場合はこの行をコメントアウトして個別追跡。
+pdfs/*.pdf
+!pdfs/.gitkeep
+
+# ── Secrets / env files ────────────────────────────────────────────
+.env
+.env.*
+*.key
+*.pem
+secrets.json
+
+# ── OS / editor noise ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.iml
+
+# ── Build / dependency artifacts (ない想定だが念のため) ────────────
+node_modules/
+dist/
+build/
+.cache/

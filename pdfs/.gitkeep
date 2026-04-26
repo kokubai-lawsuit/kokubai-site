@@ -1,0 +1,5 @@
+# Place complaint PDF and other documents here.
+# Example: pdfs/sojo.pdf
+#
+# Files matching pdfs/*.pdf are excluded by .gitignore by default.
+# To commit a specific PDF: edit .gitignore and add `!pdfs/sojo.pdf` after the wildcard.

@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ja" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">子の連れ去り国賠訴訟 — 公式サイト</title>
+<meta name="description" content="子の連れ去り・面会交流妨害・交互監護拒否に関する国会の立法不作為を問う、30名の原告による国家賠償請求訴訟の公式サイト。訴状・訴訟経緯・関連判例を公開しています。">
+<meta name="theme-color" content="#1a2744">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="子の連れ去り国賠訴訟 — 公式サイト">
+<meta property="og:description" content="子の連れ去りに関する立法不作為を問う国家賠償請求訴訟。原告30名・東京地方裁判所・令和8年3月23日提訴。">
+<meta property="og:site_name" content="子の連れ去り国賠訴訟">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="子の連れ去り国賠訴訟 — 公式サイト">
+<meta name="twitter:description" content="子の連れ去りに関する立法不作為を問う国家賠償請求訴訟。原告30名・東京地方裁判所。">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1a2744;--navy-light:#2c3e6b;--navy-pale:#e8ecf5;
+  --red:#c0392b;--red-pale:#fdf0ef;
+  --gold:#b8960c;--gold-pale:#fdf8e8;
+  --text:#1e1e1e;--text-muted:#444;--text-light:#666;
+  --border:#ddd;--bg:#f9f8f5;--white:#fff;
+  --serif:"Noto Serif JP",serif;--sans:"Noto Sans JP",sans-serif;
+}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.7}
+.nav{background:var(--navy);padding:0 16px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;min-height:54px;gap:8px;box-shadow:0 2px 8px rgba(0,0,0,0.2);flex-wrap:nowrap}
+.nav-logo{font-family:var(--serif);font-size:13px;font-weight:700;color:#fff;white-space:nowrap;flex-shrink:1;min-width:0;overflow:hidden;text-overflow:ellipsis;margin-right:4px}
+.nav-logo span{color:#e8c84a}
+.nav-right{display:flex;align-items:center;gap:2px;flex-shrink:0}
+.nav-links{display:flex;gap:2px;align-items:center;flex-wrap:nowrap}
+.nav-link{background:none;border:none;color:rgba(255,255,255,0.78);font-family:var(--sans);font-size:11px;padding:5px 8px;cursor:pointer;border-radius:4px;transition:all 0.2s;white-space:nowrap}
+.nav-link:hover,.nav-link.active{background:rgba(255,255,255,0.18);color:#fff}
+.lang-toggle{display:flex;background:rgba(255,255,255,0.1);border-radius:20px;overflow:hidden;margin-left:8px;flex-shrink:0;border:1px solid rgba(255,255,255,0.2)}
+.lang-btn{background:none;border:none;color:rgba(255,255,255,0.65);font-family:var(--sans);font-size:11px;font-weight:700;padding:4px 11px;cursor:pointer;transition:all 0.2s;letter-spacing:0.05em}
+.lang-btn.active{background:rgba(255,255,255,0.25);color:#fff}
+@media(max-width:700px){
+  .nav-logo{font-size:11px;max-width:100px}
+  .nav-link{font-size:10px;padding:4px 5px}
+  .lang-btn{padding:4px 8px}
+  .fr{grid-template-columns:1fr}
+  .tl-item{grid-template-columns:70px 1fr}
+  .hero-stats{gap:16px}
+}
+.page{display:none;animation:fadeIn 0.25s ease}
+.page.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.hero{background:var(--navy);padding:52px 24px 48px;text-align:center;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#e8c84a,#c0392b,#1a2744)}
+.hero-inner{max-width:740px;margin:0 auto}
+.hero-badge{display:inline-block;background:rgba(232,200,74,0.15);border:1px solid rgba(232,200,74,0.4);color:#e8c84a;font-size:11px;letter-spacing:0.12em;padding:4px 14px;border-radius:20px;margin-bottom:18px}
+.hero-title{font-family:var(--serif);font-size:clamp(18px,3.2vw,28px);font-weight:700;line-height:1.5;color:#fff;margin-bottom:16px}
+.hero-title em{color:#e8c84a;font-style:normal}
+.hero-sub{font-size:14px;color:rgba(255,255,255,0.85);line-height:1.8;max-width:600px;margin:0 auto 28px}
+.hero-stats{display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
+.stat{text-align:center}
+.stat-n{font-family:var(--serif);font-size:32px;font-weight:700;color:#e8c84a;line-height:1;display:block;margin-bottom:4px}
+.stat-l{font-size:11px;color:rgba(255,255,255,0.7);letter-spacing:0.05em}
+.wrap{max-width:860px;margin:0 auto;padding:40px 20px}
+.sec-title{font-family:var(--serif);font-size:19px;font-weight:700;color:var(--navy);border-left:4px solid #e8c84a;padding-left:12px;margin-bottom:22px}
+.alert{background:var(--red-pale);border:1px solid #f0cac6;border-radius:8px;padding:14px 18px;display:flex;gap:12px;margin-bottom:28px}
+.alert-dot{width:9px;height:9px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:7px}
+.alert strong{font-size:13px;color:var(--red);display:block;margin-bottom:3px}
+.alert p{font-size:12px;color:var(--text-muted);line-height:1.6}
+.claims{background:var(--navy-pale);border-radius:10px;padding:24px 20px;margin-bottom:28px}
+.claim{display:flex;gap:12px;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid #d0d8ea}
+.claim:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+.claim-n{width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.claim h4{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.claim p{font-size:12px;color:var(--text-muted);line-height:1.6}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:28px}
+.info-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:16px 14px}
+.info-card-l{font-size:11px;color:var(--text-light);margin-bottom:5px}
+.info-card-v{font-size:13px;font-weight:500;color:var(--navy);line-height:1.5}
+.law-grid{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin-bottom:28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.law-col-l{font-size:11px;color:var(--text-light);margin-bottom:4px}
+.law-col-v{font-size:13px;color:var(--navy);font-weight:500;line-height:1.6}
+.page-header{background:var(--navy);color:#fff;padding:36px 20px 28px;text-align:center}
+.page-header h1{font-family:var(--serif);font-size:22px;margin-bottom:6px}
+.page-header p{font-size:13px;color:rgba(255,255,255,0.75)}
+.page-wrap{max-width:860px;margin:0 auto;padding:20px}
+.card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:16px}
+.card h3{font-family:var(--serif);font-size:16px;color:var(--navy);margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.card p{font-size:13px;color:var(--text-muted);line-height:1.8;margin-bottom:10px}
+.card p:last-child{margin-bottom:0}
+.c-meta{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.c-meta-item{font-size:12px;color:var(--text-muted)}
+.c-meta-item strong{color:var(--navy);font-weight:500}
+.pdf-dl{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:#fff;border:none;border-radius:6px;padding:10px 20px;font-family:var(--sans);font-size:13px;font-weight:500;cursor:pointer;text-decoration:none}
+.pdf-dl:hover{background:var(--navy-light)}
+.pdf-dl-disabled{background:#999;cursor:not-allowed;pointer-events:none}
+.list-row{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #f0f0f0}
+.list-row:last-child{border-bottom:none}
+.list-num{font-size:11px;color:var(--text-light);min-width:24px;padding-top:2px}
+.list-txt{font-size:13px;color:var(--text);line-height:1.6}
+.phase-bar{max-width:860px;margin:0 auto;padding:18px 20px 0;display:flex;gap:6px;flex-wrap:wrap}
+.ptab{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:5px 14px;font-size:12px;cursor:pointer;font-family:var(--sans);color:var(--text-muted);transition:all 0.2s}
+.ptab.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.tl-item{display:grid;grid-template-columns:90px 1fr;gap:0 16px;margin-bottom:2px;position:relative}
+.tl-item::before{content:"";position:absolute;left:89px;top:18px;bottom:-2px;width:2px;background:var(--border)}
+.tl-item:last-child::before{display:none}
+.tl-dt{font-size:11px;color:var(--text-light);text-align:right;padding-top:13px;line-height:1.3}
+.tl-box{background:var(--white);border:1px solid var(--border);border-radius:9px;padding:14px 16px;margin-bottom:10px;position:relative}
+.tl-box::before{content:"";position:absolute;left:-7px;top:14px;width:12px;height:12px;border-radius:50%;background:var(--white);border:2px solid var(--navy);z-index:1}
+.tl-tag{display:inline-block;font-size:10px;font-weight:500;padding:2px 9px;border-radius:10px;margin-bottom:6px}
+.tl-tag.submit{background:#e8ecf5;color:var(--navy)}
+.tl-tag.response{background:#edf7ed;color:#1a5c1a}
+.tl-tag.hearing{background:#f0eaf8;color:#4a1888}
+.tl-tag.court{background:var(--gold-pale);color:#6b4d00}
+.tl-tag.news{background:var(--red-pale);color:var(--red)}
+.tl-ttl{font-size:14px;font-weight:500;color:var(--navy);margin-bottom:4px}
+.tl-body{font-size:12px;color:var(--text-muted);line-height:1.6}
+.tl-file-row{margin-top:8px}
+.tl-file{display:inline-flex;align-items:center;gap:5px;background:var(--navy-pale);color:var(--navy);font-size:11px;padding:4px 12px;border-radius:5px;text-decoration:none}
+.tl-file:hover{background:#d0d8ea}
+.art-card{background:var(--white);border:1px solid var(--border);border-radius:9px;padding:16px;margin-bottom:12px;transition:border-color 0.2s}
+.art-card:hover{border-color:var(--navy)}
+.art-meta{display:flex;gap:8px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.art-tag{font-size:10px;padding:2px 9px;border-radius:10px;font-weight:500}
+.art-tag.law{background:#e8ecf5;color:var(--navy)}
+.art-tag.media{background:var(--red-pale);color:var(--red)}
+.art-tag.policy{background:var(--gold-pale);color:#6b4d00}
+.art-date{font-size:11px;color:var(--text-light)}
+.art-ttl{font-size:15px;font-weight:500;color:var(--navy);margin-bottom:6px}
+.art-exc{font-size:12px;color:var(--text-muted);line-height:1.6}
+.art-src{font-size:11px;color:var(--text-light);margin-top:8px}
+.art-src a{color:var(--navy)}
+.sign-cta-box{background:var(--navy);color:#fff;border-radius:10px;padding:24px 28px;margin-bottom:24px;text-align:center}
+.sign-cta-box h2{font-family:var(--serif);font-size:18px;margin-bottom:10px;color:#fff}
+.sign-cta-box p{font-size:13px;color:rgba(255,255,255,0.85);margin-bottom:18px;line-height:1.7}
+.sign-cta-box .pdf-dl{background:#e8c84a;color:var(--navy);font-weight:700}
+.sign-cta-box .pdf-dl:hover{background:#f0d660}
+.sign-why{background:var(--navy-pale);border-radius:10px;padding:20px;margin-bottom:24px}
+.sign-why h3{font-family:var(--serif);font-size:15px;color:var(--navy);margin-bottom:12px}
+.sign-why ul{list-style:none;padding:0}
+.sign-why li{font-size:13px;color:var(--text-muted);line-height:1.7;padding:6px 0 6px 20px;position:relative;border-bottom:1px solid #d0d8ea}
+.sign-why li:last-child{border-bottom:none}
+.sign-why li::before{content:"\25B8";position:absolute;left:0;color:var(--navy);font-size:11px;top:8px}
+.contact-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:24px;margin-bottom:24px}
+.contact-card h3{font-family:var(--serif);font-size:16px;color:var(--navy);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.footer{background:var(--navy);color:rgba(255,255,255,0.65);text-align:center;padding:24px 20px;font-size:12px;margin-top:48px;line-height:1.8}
+.footer a{color:rgba(255,255,255,0.85);text-decoration:none}
+/* PDF Modal */
+.pdf-modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:1000;align-items:center;justify-content:center}
+.pdf-modal-overlay.open{display:flex}
+.pdf-modal{background:#fff;border-radius:10px;overflow:hidden;width:92vw;max-width:900px;height:88vh;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,0.4)}
+.pdf-modal-bar{background:var(--navy);color:#fff;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-shrink:0}
+.pdf-modal-title{font-family:var(--serif);font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pdf-modal-close{background:rgba(255,255,255,0.18);border:none;color:#fff;width:30px;height:30px;border-radius:50%;font-size:18px;cursor:pointer;line-height:1;flex-shrink:0}
+.pdf-modal-close:hover{background:rgba(255,255,255,0.32)}
+.pdf-modal iframe{flex:1;border:none;width:100%;background:#525659}
+.pdf-modal-no-file{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--text-muted);padding:24px;text-align:center}
+.pdf-modal-no-file span{font-size:48px}
+.pdf-modal-no-file p{font-size:14px;line-height:1.6}
+/* Home preview grid */
+.home-sections-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:32px}
+@media(max-width:700px){.home-sections-grid{grid-template-columns:1fr}}
+.home-sec-card{background:var(--white);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.home-sec-hd{background:var(--navy);padding:11px 14px;display:flex;align-items:center;gap:8px}
+.home-sec-icon{font-size:15px}
+.home-sec-title{font-family:var(--serif);font-size:13px;font-weight:700;color:#fff;flex:1}
+.home-sec-more{background:rgba(255,255,255,0.18);border:none;color:#fff;font-size:11px;padding:3px 10px;border-radius:10px;cursor:pointer;white-space:nowrap;font-family:var(--sans)}
+.home-sec-more:hover{background:rgba(255,255,255,0.32)}
+.home-sec-body{padding:10px 12px}
+.home-doc-item{padding:6px 0}
+.home-doc-date{font-size:10px;color:var(--text-light);margin-bottom:3px}
+.home-doc-title{font-size:13px;font-weight:500;color:var(--navy);margin-bottom:2px}
+.home-doc-sub{font-size:11px;color:var(--text-muted);margin-bottom:8px;line-height:1.5}
+.home-doc-btn{background:var(--navy);color:#fff;border:none;border-radius:5px;padding:6px 14px;font-size:12px;cursor:pointer;font-family:var(--sans)}
+.home-doc-btn:hover{background:var(--navy-light)}
+.home-doc-btn:disabled{background:#999;cursor:not-allowed}
+.home-tl-row,.home-art-row{padding:7px 0;border-bottom:1px solid #f0f0f0}
+.home-tl-row:last-child,.home-art-row:last-child{border-bottom:none}
+.home-tl-meta,.home-art-meta{display:flex;gap:6px;align-items:center;margin-bottom:3px}
+.home-tl-ttl,.home-art-ttl{font-size:12px;color:var(--navy);line-height:1.4}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="主要ナビゲーション">
+  <div class="nav-logo"><span aria-hidden="true">&#9878;</span> <span data-i18n="nav_logo">子の連れ去り国賠訴訟</span></div>
+  <div class="nav-right">
+    <div class="nav-links">
+      <button class="nav-link active" onclick="goPage('home',this)" data-i18n-nav="nav_home">ホーム</button>
+      <button class="nav-link" onclick="goPage('complaint',this)" data-i18n-nav="nav_complaint">訴状</button>
+      <button class="nav-link" onclick="goPage('timeline',this)" data-i18n-nav="nav_timeline">訴訟経緯</button>
+      <button class="nav-link" onclick="goPage('articles',this)" data-i18n-nav="nav_articles">関連記事</button>
+      <button class="nav-link" onclick="goPage('sign',this)" data-i18n-nav="nav_sign">支援・お問い合わせ</button>
+    </div>
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button class="lang-btn active" id="btn-ja" onclick="setLang('ja')" aria-label="日本語">JA</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-label="English">EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<div id="page-home" class="page active">
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge" data-i18n="hero_badge">国家賠償請求訴訟 — 東京地方裁判所</div>
+      <h1 class="hero-title" data-i18n="hero_title">子どもの<em>連れ去り・引き離し</em>に対する<br>国の立法不作為を問う</h1>
+      <p class="hero-sub" data-i18n="hero_sub">30名の原告が団結し、子の連れ去りを放置した国に対して国家賠償を請求しています。「親が子を養育する自由」「子が親に養育される自由」は憲法13条が保障する基本的人権です。</p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-n">30</span><span class="stat-l" data-i18n="stat_plaintiffs">原告数</span></div>
+        <div class="stat"><span class="stat-n">3</span><span class="stat-l" data-i18n="stat_issues">主要争点</span></div>
+        <div class="stat"><span class="stat-n">R8.3</span><span class="stat-l" data-i18n="stat_filed">提訴</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="alert" role="status">
+      <div class="alert-dot" aria-hidden="true"></div>
+      <div>
+        <strong data-i18n="alert_title">最新状況 — 令和8年3月23日 訴状提出</strong>
+        <p data-i18n="alert_body">東京地方裁判所民事部に訴状を提出しました。原告代理人：作花知志弁護士（作花法律事務所・岡山）。今後の期日情報は「訴訟経緯」ページで随時更新します。</p>
+      </div>
+    </div>
+
+    <div class="home-sections-grid">
+      <div class="home-sec-card">
+        <div class="home-sec-hd">
+          <span class="home-sec-icon" aria-hidden="true">📄</span>
+          <span class="home-sec-title" data-i18n="nav_complaint">訴状</span>
+          <button class="home-sec-more" onclick="goPage('complaint', document.querySelectorAll('.nav-link')[1])" data-i18n="home_more">詳細を見る →</button>
+        </div>
+        <div class="home-sec-body">
+          <div class="home-doc-item">
+            <div class="home-doc-date">2026-03-23</div>
+            <div class="home-doc-title" data-i18n="complaint_info_h">訴状の基本情報</div>
+            <div class="home-doc-sub" data-i18n="complaint_date">令和8年（2026年）3月23日 東京地方裁判所提出</div>
+            <button class="home-doc-btn" onclick="openComplaintPDF()" id="home-pdf-btn" data-i18n="complaint_dl">📄 訴状を見る</button>
+          </div>
+        </div>
+      </div>
+      <div class="home-sec-card">
+        <div class="home-sec-hd">
+          <span class="home-sec-icon" aria-hidden="true">⚖️</span>
+          <span class="home-sec-title" data-i18n="nav_timeline">訴訟経緯</span>
+          <button class="home-sec-more" onclick="goPage('timeline', document.querySelectorAll('.nav-link')[2])" data-i18n="home_more">詳細を見る →</button>
+        </div>
+        <div id="home-tl-preview" class="home-sec-body"></div>
+      </div>
+      <div class="home-sec-card">
+        <div class="home-sec-hd">
+          <span class="home-sec-icon" aria-hidden="true">📰</span>
+          <span class="home-sec-title" data-i18n="nav_articles">関連記事</span>
+          <button class="home-sec-more" onclick="goPage('articles', document.querySelectorAll('.nav-link')[3])" data-i18n="home_more">詳細を見る →</button>
+        </div>
+        <div id="home-art-preview" class="home-sec-body"></div>
+      </div>
+    </div>
+
+    <h2 class="sec-title" data-i18n="sec_claims">私たちが訴えていること</h2>
+    <div class="claims">
+      <div class="claim"><div class="claim-n">1</div><div>
+        <h4 data-i18n="claim1_title">子の連れ去りに関する立法不作為（国会の責任）</h4>
+        <p data-i18n="claim1_body">一方親が他方親の同意なく子を連れ去ることを禁止・防止する立法措置を国会が長年怠ってきたことは、国家賠償法上の違法な不作為にあたります。</p>
+      </div></div>
+      <div class="claim"><div class="claim-n">2</div><div>
+        <h4 data-i18n="claim2_title">面会交流権・交互監護権に関する立法不作為</h4>
+        <p data-i18n="claim2_body">自由な面会交流の制限・拒否、および交互監護の拒否を防ぐための実効的な法整備がなされておらず、別居親と子の基本的人権が継続的に侵害されています。</p>
+      </div></div>
+      <div class="claim"><div class="claim-n">3</div><div>
+        <h4 data-i18n="claim3_title">リプロダクティブ権（生殖の自由）の侵害</h4>
+        <p data-i18n="claim3_body">子を産み育てるかを自ら決定するリプロダクティブ権（憲法13条・24条2項）も侵害されています。最高裁令和6年7月3日大法廷判決もこの権利を確認しています。</p>
+      </div></div>
+    </div>
+
+    <h2 class="sec-title" data-i18n="sec_legal">根拠となる憲法・条約・判例</h2>
+    <div class="law-grid">
+      <div><div class="law-col-l" data-i18n="law_statutes_label">基本条文</div><div class="law-col-v" data-i18n="law_statutes">憲法13条（人格権・幸福追求権）<br>憲法14条1項（法の下の平等）<br>憲法24条2項（家族・婚姻）</div></div>
+      <div><div class="law-col-l" data-i18n="law_treaty_label">国際条約</div><div class="law-col-v" data-i18n="law_treaty">児童の権利に関する条約 第9条<br>（1994年批准）</div></div>
+      <div><div class="law-col-l" data-i18n="law_cases_label">先例判決</div><div class="law-col-v" data-i18n="law_cases">大阪高裁R6.2.7判決<br>東京高裁R6.2.22判決<br>最高裁大法廷R6.7.3判決</div></div>
+    </div>
+
+    <h2 class="sec-title" data-i18n="sec_overview">事件の概要</h2>
+    <div class="info-grid">
+      <div class="info-card"><div class="info-card-l" data-i18n="ov_filed_label">提訴日</div><div class="info-card-v" data-i18n="ov_filed">令和8年（2026年）3月23日</div></div>
+      <div class="info-card"><div class="info-card-l" data-i18n="ov_court_label">裁判所</div><div class="info-card-v" data-i18n="ov_court">東京地方裁判所 民事部</div></div>
+      <div class="info-card"><div class="info-card-l" data-i18n="ov_def_label">被告</div><div class="info-card-v" data-i18n="ov_def">国（代表者：法務大臣）</div></div>
+      <div class="info-card"><div class="info-card-l" data-i18n="ov_atty_label">原告代理人</div><div class="info-card-v" data-i18n="ov_atty">弁護士 作花知志<br>（作花法律事務所・岡山）</div></div>
+      <div class="info-card"><div class="info-card-l" data-i18n="ov_amount_label">請求額</div><div class="info-card-v" data-i18n="ov_amount">1名あたり55,000円<br>（総計165万円）</div></div>
+      <div class="info-card"><div class="info-card-l" data-i18n="ov_value_label">訴訟物の価額</div><div class="info-card-v" data-i18n="ov_value">148万5,000円<br>貼用印紙：1万3,000円</div></div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div data-i18n="footer_team">子の連れ去り国賠訴訟 原告団</div>
+    <div data-i18n="footer_atty">弁護士 作花知志 ／ 作花法律事務所（岡山市北区本町3番13号）</div>
+    <div style="margin-top:8px;font-size:11px" data-i18n="footer_note">このサイトは訴訟の状況を広く市民に伝えるための情報発信サイトです。</div>
+  </footer>
+</div>
+
+<!-- COMPLAINT -->
+<div id="page-complaint" class="page">
+  <div class="page-header">
+    <h1 data-i18n="complaint_h1">訴状</h1>
+    <p data-i18n="complaint_sub">令和8年3月23日 東京地方裁判所提出</p>
+  </div>
+  <div class="page-wrap">
+    <div class="card">
+      <h3 data-i18n="complaint_info_h">訴状の基本情報</h3>
+      <div class="c-meta">
+        <div class="c-meta-item"><strong data-i18n="complaint_date_label">提出日：</strong><span data-i18n="complaint_date">令和8年（2026年）3月23日</span></div>
+        <div class="c-meta-item"><strong data-i18n="complaint_plaintiffs_label">原告数：</strong><span data-i18n="complaint_plaintiffs">30名</span></div>
+        <div class="c-meta-item"><strong data-i18n="complaint_def_label">被告：</strong><span data-i18n="complaint_def">国</span></div>
+        <div class="c-meta-item"><strong data-i18n="complaint_type_label">事件種別：</strong><span data-i18n="complaint_type">損害賠償請求事件</span></div>
+      </div>
+      <button id="pdf-dl-btn" class="pdf-dl" onclick="openComplaintPDF()" data-i18n="complaint_dl">📄 訴状を見る</button>
+    </div>
+    <div class="card">
+      <h3 data-i18n="complaint_relief_h">第１　請求の趣旨</h3>
+      <p data-i18n="complaint_relief_body">被告（国）は、各原告に対し、金<strong>5万5,000円</strong>および本訴状送達の翌日から支払済みまで年3分の割合による金員を支払え。</p>
+      <p data-i18n="complaint_relief_costs">訴訟費用は被告の負担とする。との判決並びに仮執行の宣言を求める。</p>
+    </div>
+    <div class="card">
+      <h3 data-i18n="complaint_toc_h">第２　請求の原因（目次）</h3>
+      <div class="list-row"><div class="list-num">１</div><div class="list-txt" data-i18n="toc1">当事者と本件の経緯、さらには原告らの権利侵害について</div></div>
+      <div class="list-row"><div class="list-num">２</div><div class="list-txt" data-i18n="toc2">総論 — 原告らの基本的人権（親が子を養育する自由・子が親に養育される自由・リプロダクティブ権）の侵害について</div></div>
+      <div class="list-row"><div class="list-num">３</div><div class="list-txt" data-i18n="toc3">子の連れ去り（引き離し）についての法の欠缺と国会（国会議員）の立法不作為責任について</div></div>
+      <div class="list-row"><div class="list-num">４</div><div class="list-txt" data-i18n="toc4">面会交流権及び交互監護権についての法の欠缺と国会（国会議員）の立法不作為責任について</div></div>
+      <div class="list-row"><div class="list-num">５</div><div class="list-txt" data-i18n="toc5">原告らの損害</div></div>
+      <div class="list-row"><div class="list-num">６</div><div class="list-txt" data-i18n="toc6">結論</div></div>
+    </div>
+    <div class="card">
+      <h3 data-i18n="complaint_pts_h">主な主張の要点</h3>
+      <p data-i18n="complaint_pt1"><strong>【憲法上の権利】</strong>「親が子を養育する自由」「子が親に養育される自由」は、憲法13条（人格権・幸福追求権）、憲法14条1項（法の下の平等）、憲法24条2項によって保障される基本的人権です。大阪高裁令和6年2月7日判決・東京高裁令和6年2月22日判決もこれを認めています。</p>
+      <p data-i18n="complaint_pt2"><strong>【科学的根拠】</strong>親と子が直接触れ合うことで、双方の脳に「オキシトシン（愛情ホルモン）」が分泌されることが医学研究で確認されています。別居親との面会交流が多い子ほど自己肯定感・コミュニケーション能力が高いという心理学研究もあります。</p>
+      <p data-i18n="complaint_pt3"><strong>【国際比較】</strong>アリゾナ州をはじめ諸外国では、この科学的知見に基づき、子の年齢に応じた面会交流頻度・時間が法定されています。日本の立法の遅れは国際的にも異常です。</p>
+      <p data-i18n="complaint_pt4"><strong>【立法不作為の違法性】</strong>国会がこれらの法整備を長年怠ってきたことは、国家賠償法1条1項にいう「違法」にあたり、国は原告らに生じた損害を賠償すべきです。</p>
+    </div>
+  </div>
+  <footer class="footer"><div data-i18n="footer_team">子の連れ去り国賠訴訟 原告団</div></footer>
+</div>
+
+<!-- TIMELINE -->
+<div id="page-timeline" class="page">
+  <div class="page-header">
+    <h1 data-i18n="tl_h1">訴訟の経緯</h1>
+    <p data-i18n="tl_sub">提訴から現在までの全書面・期日を記録しています</p>
+  </div>
+  <div class="phase-bar" role="group" aria-label="フィルタ">
+    <button class="ptab active" onclick="filterTL('all',this)" data-i18n-ptab="ptab_all">すべて</button>
+    <button class="ptab" onclick="filterTL('submit',this)" data-i18n-ptab="ptab_submit">原告書面</button>
+    <button class="ptab" onclick="filterTL('response',this)" data-i18n-ptab="ptab_response">被告書面</button>
+    <button class="ptab" onclick="filterTL('hearing',this)" data-i18n-ptab="ptab_hearing">期日</button>
+    <button class="ptab" onclick="filterTL('court',this)" data-i18n-ptab="ptab_court">裁判所</button>
+  </div>
+  <div class="page-wrap">
+    <div id="tl-list"></div>
+  </div>
+  <footer class="footer"><div data-i18n="footer_team">子の連れ去り国賠訴訟 原告団</div></footer>
+</div>
+
+<!-- ARTICLES -->
+<div id="page-articles" class="page">
+  <div class="page-header">
+    <h1 data-i18n="art_h1">関連記事・資料</h1>
+    <p data-i18n="art_sub">報道・論文・政策動向・判例を収集しています</p>
+  </div>
+  <div class="page-wrap">
+    <div id="art-list"></div>
+  </div>
+  <footer class="footer"><div data-i18n="footer_team">子の連れ去り国賠訴訟 原告団</div></footer>
+</div>
+
+<!-- SIGN / CONTACT -->
+<div id="page-sign" class="page">
+  <div class="page-header">
+    <h1 data-i18n="sign_h1">支援・お問い合わせ</h1>
+    <p data-i18n="sign_sub">この訴訟に賛同し、子どもの権利を守る活動を支えてください</p>
+  </div>
+  <div class="page-wrap">
+    <div class="sign-cta-box">
+      <h2 data-i18n="sign_cta_h">賛同署名にご協力ください</h2>
+      <p data-i18n="sign_cta_p">あなたの一筆が、立法府・司法府への大きな後押しになります。<br>署名は外部のGoogleフォームから受け付けています。</p>
+      <a id="sign-gform-btn" href="#" target="_blank" rel="noopener" class="pdf-dl" data-i18n="sign_open_btn">✍️ 署名フォームを開く</a>
+    </div>
+
+    <div class="sign-why">
+      <h3 data-i18n="sign_why_h">なぜ署名が必要か</h3>
+      <ul>
+        <li data-i18n="sign_why1">子の連れ去りは毎年数千件起きており、引き離された親と子が深刻な人権侵害を受け続けています</li>
+        <li data-i18n="sign_why2">日本は児童の権利条約を批准しながら、国内の実効的な法整備を放置しています</li>
+        <li data-i18n="sign_why3">市民からの支持の声が、立法府・司法府への働きかけに直結します</li>
+        <li data-i18n="sign_why4">署名・応援メッセージは裁判の記録として残され、世論形成にも活用します</li>
+      </ul>
+    </div>
+
+    <div class="contact-card">
+      <h3 data-i18n="contact_h">お問い合わせ</h3>
+      <p style="font-size:13px;color:var(--text-muted);margin-bottom:16px" data-i18n="contact_intro">取材・原告参加のご相談・その他のお問い合わせは、Googleフォームよりご連絡ください。弁護士・原告団にて対応いたします。</p>
+      <a id="contact-gform-btn" href="#" target="_blank" rel="noopener" class="pdf-dl" data-i18n="contact_gform_btn">📝 お問い合わせフォームを開く</a>
+      <p style="font-size:11px;color:var(--text-light);margin-top:12px" data-i18n="contact_privacy">※ いただいた情報は弁護士・原告団のみで管理します。</p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div data-i18n="footer_team">子の連れ去り国賠訴訟 原告団</div>
+    <div data-i18n="footer_atty">弁護士 作花知志 ／ 作花法律事務所 岡山市北区本町3番13号</div>
+    <div data-i18n="footer_tel">TEL: 086-206-2331 ／ FAX: 086-206-2332</div>
+  </footer>
+</div>
+
+<!-- PDF MODAL -->
+<div id="pdf-modal" class="pdf-modal-overlay" onclick="closePDFModalOutside(event)" role="dialog" aria-modal="true" aria-labelledby="pdf-modal-title">
+  <div class="pdf-modal">
+    <div class="pdf-modal-bar">
+      <span class="pdf-modal-title" id="pdf-modal-title">訴状PDF（主張部分）</span>
+      <button class="pdf-modal-close" onclick="closePDFModal()" aria-label="閉じる">✕</button>
+    </div>
+    <div id="pdf-modal-body" style="flex:1;display:flex;flex-direction:column">
+      <div class="pdf-modal-no-file" id="pdf-modal-nofile">
+        <span aria-hidden="true">📄</span>
+        <p data-i18n="pdf_no_file">訴状PDFは現在準備中です。<br>準備が整い次第、こちらから閲覧いただけます。</p>
+      </div>
+      <iframe id="pdf-modal-iframe" src="" style="display:none;flex:1;border:none;width:100%" title="訴状PDF"></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ──────────────────────────────────────────────────────────────────────────────
+   Configuration — edit here to customise without touching the rest of the file
+   ────────────────────────────────────────────────────────────────────────────── */
+
+// 訴状PDFのパス（pdfs/ ディレクトリに配置してください。空のままだと「準備中」と表示されます）
+var COMPLAINT_PDF_PATH = ''; // 例: 'pdfs/sojo.pdf'
+
+// Googleフォームの URL（賛同署名・お問い合わせ）
+var SIGN_FORM_URL    = 'https://forms.gle/PLACEHOLDER_SIGN_FORM';
+var CONTACT_FORM_URL = 'https://forms.gle/PLACEHOLDER_CONTACT_FORM';
+
+/* ────────────────────────────────────────────────────────────────────────────── */
+
+var I18N = {
+  ja: {
+    nav_logo:'子の連れ去り国賠訴訟', nav_home:'ホーム', nav_complaint:'訴状',
+    nav_timeline:'訴訟経緯', nav_articles:'関連記事', nav_sign:'支援・お問い合わせ',
+    hero_badge:'国家賠償請求訴訟 — 東京地方裁判所',
+    hero_title:'子どもの<em>連れ去り・引き離し</em>に対する<br>国の立法不作為を問う',
+    hero_sub:'30名の原告が団結し、子の連れ去りを放置した国に対して国家賠償を請求しています。「親が子を養育する自由」「子が親に養育される自由」は憲法13条が保障する基本的人権です。',
+    stat_plaintiffs:'原告数', stat_issues:'主要争点', stat_filed:'提訴',
+    alert_title:'最新状況 — 令和8年3月23日 訴状提出',
+    alert_body:'東京地方裁判所民事部に訴状を提出しました。原告代理人：作花知志弁護士（作花法律事務所・岡山）。今後の期日情報は「訴訟経緯」ページで随時更新します。',
+    sec_claims:'私たちが訴えていること',
+    claim1_title:'子の連れ去りに関する立法不作為（国会の責任）',
+    claim1_body:'一方親が他方親の同意なく子を連れ去ることを禁止・防止する立法措置を国会が長年怠ってきたことは、国家賠償法上の違法な不作為にあたります。',
+    claim2_title:'面会交流権・交互監護権に関する立法不作為',
+    claim2_body:'自由な面会交流の制限・拒否、および交互監護の拒否を防ぐための実効的な法整備がなされておらず、別居親と子の基本的人権が継続的に侵害されています。',
+    claim3_title:'リプロダクティブ権（生殖の自由）の侵害',
+    claim3_body:'子を産み育てるかを自ら決定するリプロダクティブ権（憲法13条・24条2項）も侵害されています。最高裁令和6年7月3日大法廷判決もこの権利を確認しています。',
+    sec_legal:'根拠となる憲法・条約・判例',
+    law_statutes_label:'基本条文', law_statutes:'憲法13条（人格権・幸福追求権）<br>憲法14条1項（法の下の平等）<br>憲法24条2項（家族・婚姻）',
+    law_treaty_label:'国際条約', law_treaty:'児童の権利に関する条約 第9条<br>（1994年批准）',
+    law_cases_label:'先例判決', law_cases:'大阪高裁R6.2.7判決<br>東京高裁R6.2.22判決<br>最高裁大法廷R6.7.3判決',
+    sec_overview:'事件の概要',
+    ov_filed_label:'提訴日', ov_filed:'令和8年（2026年）3月23日',
+    ov_court_label:'裁判所', ov_court:'東京地方裁判所 民事部',
+    ov_def_label:'被告', ov_def:'国（代表者：法務大臣）',
+    ov_atty_label:'原告代理人', ov_atty:'弁護士 作花知志<br>（作花法律事務所・岡山）',
+    ov_amount_label:'請求額', ov_amount:'1名あたり55,000円<br>（総計165万円）',
+    ov_value_label:'訴訟物の価額', ov_value:'148万5,000円<br>貼用印紙：1万3,000円',
+    complaint_h1:'訴状', complaint_sub:'令和8年3月23日 東京地方裁判所提出',
+    complaint_info_h:'訴状の基本情報',
+    complaint_date_label:'提出日：', complaint_date:'令和8年（2026年）3月23日',
+    complaint_plaintiffs_label:'原告数：', complaint_plaintiffs:'30名',
+    complaint_def_label:'被告：', complaint_def:'国',
+    complaint_type_label:'事件種別：', complaint_type:'損害賠償請求事件',
+    complaint_dl:'📄 訴状を見る',
+    complaint_relief_h:'第１　請求の趣旨',
+    complaint_relief_body:'被告（国）は、各原告に対し、金<strong>5万5,000円</strong>および本訴状送達の翌日から支払済みまで年3分の割合による金員を支払え。',
+    complaint_relief_costs:'訴訟費用は被告の負担とする。との判決並びに仮執行の宣言を求める。',
+    complaint_toc_h:'第２　請求の原因（目次）',
+    toc1:'当事者と本件の経緯、さらには原告らの権利侵害について',
+    toc2:'総論 — 原告らの基本的人権（親が子を養育する自由・子が親に養育される自由・リプロダクティブ権）の侵害について',
+    toc3:'子の連れ去り（引き離し）についての法の欠缺と国会（国会議員）の立法不作為責任について',
+    toc4:'面会交流権及び交互監護権についての法の欠缺と国会（国会議員）の立法不作為責任について',
+    toc5:'原告らの損害', toc6:'結論',
+    complaint_pts_h:'主な主張の要点',
+    complaint_pt1:'<strong>【憲法上の権利】</strong>「親が子を養育する自由」「子が親に養育される自由」は、憲法13条（人格権・幸福追求権）、憲法14条1項（法の下の平等）、憲法24条2項によって保障される基本的人権です。大阪高裁令和6年2月7日判決・東京高裁令和6年2月22日判決もこれを認めています。',
+    complaint_pt2:'<strong>【科学的根拠】</strong>親と子が直接触れ合うことで、双方の脳に「オキシトシン（愛情ホルモン）」が分泌されることが医学研究で確認されています。別居親との面会交流が多い子ほど自己肯定感・コミュニケーション能力が高いという心理学研究もあります。',
+    complaint_pt3:'<strong>【国際比較】</strong>アリゾナ州をはじめ諸外国では、この科学的知見に基づき、子の年齢に応じた面会交流頻度・時間が法定されています。日本の立法の遅れは国際的にも異常です。',
+    complaint_pt4:'<strong>【立法不作為の違法性】</strong>国会がこれらの法整備を長年怠ってきたことは、国家賠償法1条1項にいう「違法」にあたり、国は原告らに生じた損害を賠償すべきです。',
+    tl_h1:'訴訟の経緯', tl_sub:'提訴から現在までの全書面・期日を記録しています',
+    ptab_all:'すべて', ptab_submit:'原告書面', ptab_response:'被告書面',
+    ptab_hearing:'期日', ptab_court:'裁判所',
+    art_h1:'関連記事・資料', art_sub:'報道・論文・政策動向・判例を収集しています',
+    sign_h1:'支援・お問い合わせ', sign_sub:'この訴訟に賛同し、子どもの権利を守る活動を支えてください',
+    sign_cta_h:'賛同署名にご協力ください',
+    sign_cta_p:'あなたの一筆が、立法府・司法府への大きな後押しになります。<br>署名は外部のGoogleフォームから受け付けています。',
+    sign_open_btn:'✍️ 署名フォームを開く',
+    sign_why_h:'なぜ署名が必要か',
+    sign_why1:'子の連れ去りは毎年数千件起きており、引き離された親と子が深刻な人権侵害を受け続けています',
+    sign_why2:'日本は児童の権利条約を批准しながら、国内の実効的な法整備を放置しています',
+    sign_why3:'市民からの支持の声が、立法府・司法府への働きかけに直結します',
+    sign_why4:'署名・応援メッセージは裁判の記録として残され、世論形成にも活用します',
+    contact_h:'お問い合わせ',
+    contact_intro:'取材・原告参加のご相談・その他のお問い合わせは、Googleフォームよりご連絡ください。弁護士・原告団にて対応いたします。',
+    contact_gform_btn:'📝 お問い合わせフォームを開く',
+    contact_privacy:'※ いただいた情報は弁護士・原告団のみで管理します。',
+    footer_team:'子の連れ去り国賠訴訟 原告団',
+    footer_atty:'弁護士 作花知志 ／ 作花法律事務所（岡山市北区本町3番13号）',
+    footer_note:'このサイトは訴訟の状況を広く市民に伝えるための情報発信サイトです。',
+    footer_tel:'TEL: 086-206-2331 ／ FAX: 086-206-2332',
+    tl_tag_submit:'原告書面', tl_tag_response:'被告書面',
+    tl_tag_hearing:'口頭弁論', tl_tag_court:'裁判所決定', tl_tag_news:'関連動向',
+    art_tag_law:'法律・判例', art_tag_media:'報道・メディア', art_tag_policy:'政策・立法',
+    source_label:'出典：', see_article:'記事を見る',
+    no_entries:'該当する記録がありません', no_articles:'記事がまだ登録されていません',
+    pdf_no_file:'訴状PDFは現在準備中です。<br>準備が整い次第、こちらから閲覧いただけます。',
+    page_title:'子の連れ去り国賠訴訟 — 公式サイト',
+    home_more:'詳細を見る →'
+  },
+  en: {
+    nav_logo:'Child Abduction State Compensation Lawsuit', nav_home:'Home', nav_complaint:'Complaint',
+    nav_timeline:'Case Timeline', nav_articles:'Related Articles', nav_sign:'Support / Contact',
+    hero_badge:'State Compensation Lawsuit — Tokyo District Court',
+    hero_title:'Challenging the State\'s <em>Legislative Inaction</em><br>on Child Abduction &amp; Parental Separation',
+    hero_sub:'30 plaintiffs united to seek state compensation against the government\'s prolonged failure to legislate against child abduction. The freedom of parents to raise their children and children to be raised by their parents is a fundamental right protected under Article 13 of the Constitution.',
+    stat_plaintiffs:'Plaintiffs', stat_issues:'Key Issues', stat_filed:'Filed',
+    alert_title:'Latest — Complaint Filed on March 23, 2026',
+    alert_body:'The complaint was filed with the Civil Division of the Tokyo District Court. Lead counsel: Attorney Satoshi Sakka (Sakka Law Office, Okayama). Court dates will be updated on the Case Timeline page.',
+    sec_claims:'What We Are Claiming',
+    claim1_title:'Legislative Inaction on Child Abduction (Parliamentary Responsibility)',
+    claim1_body:'The National Diet\'s prolonged failure to enact legislation prohibiting and preventing one parent from abducting a child without the other parent\'s consent constitutes illegal inaction under the State Tort Liability Act.',
+    claim2_title:'Legislative Inaction on Visitation &amp; Shared Custody Rights',
+    claim2_body:'The absence of effective legislation preventing the restriction or denial of free visitation and the refusal of shared custody has resulted in the continuous violation of the fundamental rights of separated parents and children.',
+    claim3_title:'Violation of Reproductive Rights',
+    claim3_body:'The right to decide whether to have and raise children (reproductive rights under Articles 13 and 24(2) of the Constitution) has also been infringed. The Supreme Court Grand Bench ruling of July 3, 2024 affirmed this right.',
+    sec_legal:'Constitutional &amp; Legal Basis',
+    law_statutes_label:'Constitution', law_statutes:'Article 13 (Right to Personality / Pursuit of Happiness)<br>Article 14(1) (Equality under the Law)<br>Article 24(2) (Family / Marriage)',
+    law_treaty_label:'International Treaty', law_treaty:'UN Convention on the Rights of the Child, Art. 9<br>(Ratified 1994)',
+    law_cases_label:'Key Precedents', law_cases:'Osaka High Court Feb. 7, 2024<br>Tokyo High Court Feb. 22, 2024<br>Supreme Court Grand Bench Jul. 3, 2024',
+    sec_overview:'Case Overview',
+    ov_filed_label:'Date Filed', ov_filed:'March 23, 2026',
+    ov_court_label:'Court', ov_court:'Tokyo District Court, Civil Division',
+    ov_def_label:'Defendant', ov_def:'The State (rep. by the Minister of Justice)',
+    ov_atty_label:'Lead Counsel', ov_atty:'Attorney Satoshi Sakka<br>(Sakka Law Office, Okayama)',
+    ov_amount_label:'Claim Amount', ov_amount:'¥55,000 per plaintiff<br>(¥1.65M total)',
+    ov_value_label:'Litigation Value', ov_value:'¥1,485,000<br>Filing Fee: ¥13,000',
+    complaint_h1:'Complaint', complaint_sub:'Filed March 23, 2026 — Tokyo District Court',
+    complaint_info_h:'Complaint Overview',
+    complaint_date_label:'Date Filed:', complaint_date:'March 23, 2026',
+    complaint_plaintiffs_label:'No. of Plaintiffs:', complaint_plaintiffs:'30',
+    complaint_def_label:'Defendant:', complaint_def:'The State',
+    complaint_type_label:'Case Type:', complaint_type:'Damages Claim',
+    complaint_dl:'📄 View Complaint',
+    complaint_relief_h:'Part 1 — Relief Sought',
+    complaint_relief_body:'The Defendant (State) shall pay each Plaintiff the sum of <strong>¥55,000</strong> plus interest at the rate of 3% per annum from the day following service of this complaint until full payment.',
+    complaint_relief_costs:'Court costs shall be borne by the Defendant. Plaintiffs seek judgment and an order of provisional execution.',
+    complaint_toc_h:'Part 2 — Grounds for Claim (Table of Contents)',
+    toc1:'Parties, background, and rights violations suffered by the Plaintiffs',
+    toc2:'General argument — Violation of fundamental rights (freedom to raise one\'s child, freedom to be raised by one\'s parents, and reproductive rights)',
+    toc3:'Legal lacunae regarding child abduction and legislative inaction by the National Diet',
+    toc4:'Legal lacunae regarding visitation and shared custody rights and legislative inaction by the National Diet',
+    toc5:'Damages suffered by the Plaintiffs', toc6:'Conclusion',
+    complaint_pts_h:'Key Arguments',
+    complaint_pt1:'<strong>[Constitutional Rights]</strong> The freedom to raise one\'s child and the freedom to be raised by one\'s parents are fundamental rights guaranteed by Articles 13, 14(1), and 24(2) of the Constitution. The Osaka High Court (Feb. 7, 2024) and Tokyo High Court (Feb. 22, 2024) have both affirmed these rights.',
+    complaint_pt2:'<strong>[Scientific Basis]</strong> Medical research confirms that direct physical contact between parent and child stimulates the release of oxytocin (the "bonding hormone") in both brains. Psychological studies show that children with more frequent contact with their non-resident parent exhibit higher self-esteem and better communication skills.',
+    complaint_pt3:'<strong>[International Comparison]</strong> Countries such as the U.S. state of Arizona have legislated specific visitation schedules by age group based on this scientific evidence. Japan\'s legislative delay is internationally anomalous.',
+    complaint_pt4:'<strong>[Illegality of Legislative Inaction]</strong> The National Diet\'s prolonged failure to enact these protections constitutes "illegal" conduct under Article 1(1) of the State Tort Liability Act, and the State must compensate the Plaintiffs for their resulting damages.',
+    tl_h1:'Case Timeline', tl_sub:'All filings and hearings from the date of filing are recorded here.',
+    ptab_all:'All', ptab_submit:'Plaintiff\'s Filings', ptab_response:'Defendant\'s Filings',
+    ptab_hearing:'Hearings', ptab_court:'Court Orders',
+    art_h1:'Related Articles & Resources', art_sub:'Collecting news, academic papers, policy updates, and precedents.',
+    sign_h1:'Support / Contact', sign_sub:'Stand with us to protect children\'s rights.',
+    sign_cta_h:'Add Your Signature',
+    sign_cta_p:'Your signature is a powerful push for the legislature and judiciary.<br>Signatures are collected via an external Google Form.',
+    sign_open_btn:'✍️ Open the Signature Form',
+    sign_why_h:'Why Your Signature Matters',
+    sign_why1:'Thousands of parental child abductions occur in Japan every year, causing severe and ongoing human rights violations for separated parents and children.',
+    sign_why2:'Despite ratifying the UN Convention on the Rights of the Child, Japan has failed to enact effective domestic legislation.',
+    sign_why3:'Public support directly strengthens advocacy with the legislature and judiciary.',
+    sign_why4:'Signatures and messages of support are preserved as part of the court record and used in public awareness efforts.',
+    contact_h:'Contact',
+    contact_intro:'For press, plaintiff enquiries, or other questions, please use the Google Form below. Our legal team will respond.',
+    contact_gform_btn:'📝 Open Contact Form',
+    contact_privacy:'* Information provided will be managed solely by the legal team and plaintiff group.',
+    footer_team:'Plaintiffs Group — Child Abduction State Compensation Lawsuit',
+    footer_atty:'Attorney Satoshi Sakka / Sakka Law Office, 3-13 Honmachi, Kita-ku, Okayama',
+    footer_note:'This site is dedicated to informing citizens about the progress of this litigation.',
+    footer_tel:'TEL: +81-86-206-2331 / FAX: +81-86-206-2332',
+    tl_tag_submit:'Plaintiff\'s Filing', tl_tag_response:'Defendant\'s Filing',
+    tl_tag_hearing:'Hearing', tl_tag_court:'Court Order', tl_tag_news:'Development',
+    art_tag_law:'Law / Precedent', art_tag_media:'News / Media', art_tag_policy:'Policy / Legislation',
+    source_label:'Source: ', see_article:'View Article',
+    no_entries:'No matching records found.', no_articles:'No articles have been added yet.',
+    pdf_no_file:'The complaint PDF is being prepared.<br>It will be viewable here once available.',
+    page_title:'Child Abduction State Compensation Lawsuit — Official Site',
+    home_more:'See more →'
+  }
+};
+
+/* ────────────────────────────────────────────────────────────────────────────── */
+/* Timeline data — append new entries here                                       */
+/* ────────────────────────────────────────────────────────────────────────────── */
+var entries = [
+  {
+    id: 1, date: '2026-03-23', tag: 'submit',
+    title_ja: '訴状提出（東京地方裁判所）',
+    body_ja: '30名の原告が訴状を提出。子の連れ去り・面会交流妨害・交互監護拒否に関する国会の立法不作為を理由に国家賠償を請求。原告代理人：作花知志弁護士。',
+    title_en: 'Complaint filed (Tokyo District Court)',
+    body_en: '30 plaintiffs filed a state-compensation complaint citing the National Diet\'s legislative inaction on child abduction, obstruction of visitation, and refusal of shared custody. Lead counsel: Attorney Satoshi Sakka.',
+    isComplaint: true
+  }
+];
+
+/* ────────────────────────────────────────────────────────────────────────────── */
+/* Articles data — append new articles here                                      */
+/* ────────────────────────────────────────────────────────────────────────────── */
+var articles = [
+  {
+    id: 1, date: '2024-02-07', tag: 'law',
+    title_ja: '大阪高裁令和6年2月7日判決（令和5年（ネ）第1913号）',
+    body_ja: '「親が子を養育する自由」「子が親に養育される自由」は憲法13条によって保障される人格権の一内容であると判示。本訴訟の主要な法的根拠の一つ。',
+    title_en: 'Osaka High Court Judgment, Feb. 7, 2024 (Case No. 1913, Reiwa 5)',
+    body_en: 'Held that the freedom of a parent to raise a child and the freedom of a child to be raised by a parent are part of the right to personality protected by Article 13 of the Constitution. One of the principal legal foundations of this lawsuit.',
+    source_ja: '大阪高等裁判所', source_en: 'Osaka High Court', url: ''
+  },
+  {
+    id: 2, date: '2024-02-22', tag: 'law',
+    title_ja: '東京高裁令和6年2月22日判決（令和5年（ネ）第3026号・自然的親子権訴訟）',
+    body_ja: '子が親から養育監護を受ける自由権は人格権として憲法13条で保障されると判示。親の子を養育監護する自由も同様に保護されるとした重要判例。',
+    title_en: 'Tokyo High Court Judgment, Feb. 22, 2024 (Case No. 3026, Reiwa 5 — Natural Parent-Child Rights Suit)',
+    body_en: 'Held that a child\'s right to be raised and cared for by their parent is protected as a personality right under Article 13. A landmark ruling that also protects a parent\'s reciprocal right.',
+    source_ja: '東京高等裁判所', source_en: 'Tokyo High Court', url: ''
+  },
+  {
+    id: 3, date: '2024-07-03', tag: 'law',
+    title_ja: '最高裁大法廷令和6年7月3日判決（令和5年（受）第1319号・国家賠償請求事件）',
+    body_ja: 'リプロダクティブ権（子を産み育てるかを意思決定する権利）に関する重要判示。本訴訟の第3の主張（リプロダクティブ権侵害）の先例となる大法廷判決。',
+    title_en: 'Supreme Court Grand Bench Judgment, Jul. 3, 2024 (Case No. 1319, Reiwa 5 — State Compensation Suit)',
+    body_en: 'Landmark Grand Bench ruling on reproductive rights (the right to decide whether to bear and raise children). The principal precedent for the third claim in this lawsuit.',
+    source_ja: '最高裁判所', source_en: 'Supreme Court of Japan', url: ''
+  }
+];
+
+/* ────────────────────────────────────────────────────────────────────────────── */
+/* App logic                                                                     */
+/* ────────────────────────────────────────────────────────────────────────────── */
+var currentLang = 'ja';
+var tlFilter = 'all';
+
+function setLang(lang) {
+  currentLang = lang;
+  document.getElementById('html-root').lang = lang;
+  document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('page-title').textContent = I18N[lang].page_title;
+  var d = I18N[lang];
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (d[key] !== undefined) el.innerHTML = d[key];
+  });
+  document.querySelectorAll('[data-i18n-nav]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-nav');
+    if (d[key] !== undefined) el.textContent = d[key];
+  });
+  document.querySelectorAll('[data-i18n-ptab]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-ptab');
+    if (d[key] !== undefined) el.textContent = d[key];
+  });
+  renderTL();
+  renderArt();
+  renderHomePreview();
+}
+
+function goPage(id, btn) {
+  document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
+  document.getElementById('page-' + id).classList.add('active');
+  document.querySelectorAll('.nav-link').forEach(function(b) { b.classList.remove('active'); });
+  if (btn) btn.classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+function fmtDate(d) {
+  if (!d) return '';
+  var p = d.split('-');
+  if (currentLang === 'en') {
+    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(p[1])-1] + ' ' + parseInt(p[2]) + ', ' + p[0];
+  }
+  return p[0] + '年' + parseInt(p[1]) + '月' + parseInt(p[2]) + '日';
+}
+
+function filterTL(f, btn) {
+  tlFilter = f;
+  document.querySelectorAll('.ptab').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  renderTL();
+}
+
+function renderTL() {
+  var el = document.getElementById('tl-list'); if (!el) return;
+  var d = I18N[currentLang];
+  var TL_TAG = { submit: d.tl_tag_submit, response: d.tl_tag_response,
+    hearing: d.tl_tag_hearing, court: d.tl_tag_court, news: d.tl_tag_news };
+  var list = tlFilter === 'all' ? entries : entries.filter(function(e) { return e.tag === tlFilter; });
+  if (!list.length) {
+    el.innerHTML = '<p style="color:#888;text-align:center;padding:28px;font-size:13px">' + d.no_entries + '</p>';
+    return;
+  }
+  el.innerHTML = list.map(function(e) {
+    var title = (currentLang === 'en' && e.title_en) ? e.title_en : e.title_ja;
+    var body  = (currentLang === 'en' && e.body_en)  ? e.body_en  : e.body_ja;
+    var fileHTML = '';
+    if (e.isComplaint && COMPLAINT_PDF_PATH) {
+      fileHTML = '<div class="tl-file-row"><button class="tl-file" style="cursor:pointer;background:var(--navy-pale);border:none;font:inherit" onclick="openComplaintPDF()">📄 ' + (currentLang === 'en' ? 'View complaint PDF' : '訴状PDFを開く') + '</button></div>';
+    }
+    return '<div class="tl-item"><div class="tl-dt">' + fmtDate(e.date) + '</div>' +
+      '<div class="tl-box"><span class="tl-tag ' + e.tag + '">' + (TL_TAG[e.tag] || e.tag) + '</span>' +
+      '<div class="tl-ttl">' + escHtml(title) + '</div>' +
+      (body ? '<div class="tl-body">' + escHtml(body) + '</div>' : '') +
+      fileHTML + '</div></div>';
+  }).join('');
+}
+
+function renderArt() {
+  var el = document.getElementById('art-list'); if (!el) return;
+  var d = I18N[currentLang];
+  var ART_TAG = { law: d.art_tag_law, media: d.art_tag_media, policy: d.art_tag_policy };
+  if (!articles.length) {
+    el.innerHTML = '<p style="color:#888;text-align:center;padding:28px;font-size:13px">' + d.no_articles + '</p>';
+    return;
+  }
+  el.innerHTML = articles.map(function(a) {
+    var title  = (currentLang === 'en' && a.title_en)  ? a.title_en  : a.title_ja;
+    var body   = (currentLang === 'en' && a.body_en)   ? a.body_en   : a.body_ja;
+    var source = (currentLang === 'en' && a.source_en) ? a.source_en : a.source_ja;
+    var srcLink = a.url ? ' ｜ <a href="' + a.url + '" target="_blank" rel="noopener">' + d.see_article + '</a>' : '';
+    return '<div class="art-card">' +
+      '<div class="art-meta"><span class="art-tag ' + a.tag + '">' + (ART_TAG[a.tag] || a.tag) + '</span>' +
+      '<span class="art-date">' + fmtDate(a.date) + '</span></div>' +
+      '<div class="art-ttl">' + escHtml(title) + '</div>' +
+      (body ? '<div class="art-exc">' + escHtml(body) + '</div>' : '') +
+      '<div class="art-src">' + d.source_label + escHtml(source || '') + srcLink + '</div>' +
+      '</div>';
+  }).join('');
+}
+
+function renderHomePreview() {
+  var d = I18N[currentLang];
+  var TL_TAG = { submit: d.tl_tag_submit, response: d.tl_tag_response,
+    hearing: d.tl_tag_hearing, court: d.tl_tag_court, news: d.tl_tag_news };
+  var ART_TAG = { law: d.art_tag_law, media: d.art_tag_media, policy: d.art_tag_policy };
+
+  // Update complaint PDF button state
+  var pdfBtn = document.getElementById('home-pdf-btn');
+  if (pdfBtn) {
+    pdfBtn.disabled = !COMPLAINT_PDF_PATH;
+  }
+
+  var tlEl = document.getElementById('home-tl-preview');
+  if (tlEl) {
+    var recent = entries.slice(0, 3);
+    if (!recent.length) {
+      tlEl.innerHTML = '<p style="font-size:12px;color:#888;padding:8px 0">' + d.no_entries + '</p>';
+    } else {
+      tlEl.innerHTML = recent.map(function(e) {
+        var title = (currentLang === 'en' && e.title_en) ? e.title_en : e.title_ja;
+        return '<div class="home-tl-row"><div class="home-tl-meta">' +
+          '<span class="tl-tag ' + e.tag + '" style="margin:0">' + (TL_TAG[e.tag] || e.tag) + '</span>' +
+          '<span style="font-size:10px;color:var(--text-light)">' + fmtDate(e.date) + '</span></div>' +
+          '<div class="home-tl-ttl">' + escHtml(title) + '</div></div>';
+      }).join('');
+    }
+  }
+
+  var artEl = document.getElementById('home-art-preview');
+  if (artEl) {
+    var recentArt = articles.slice(0, 3);
+    if (!recentArt.length) {
+      artEl.innerHTML = '<p style="font-size:12px;color:#888;padding:8px 0">' + d.no_articles + '</p>';
+    } else {
+      artEl.innerHTML = recentArt.map(function(a) {
+        var title = (currentLang === 'en' && a.title_en) ? a.title_en : a.title_ja;
+        return '<div class="home-art-row"><div class="home-art-meta">' +
+          '<span class="art-tag ' + a.tag + '" style="margin:0">' + (ART_TAG[a.tag] || a.tag) + '</span>' +
+          '<span style="font-size:10px;color:var(--text-light)">' + fmtDate(a.date) + '</span></div>' +
+          '<div class="home-art-ttl">' + escHtml(title) + '</div></div>';
+      }).join('');
+    }
+  }
+}
+
+function openComplaintPDF() {
+  var modal  = document.getElementById('pdf-modal');
+  var iframe = document.getElementById('pdf-modal-iframe');
+  var nofile = document.getElementById('pdf-modal-nofile');
+  if (COMPLAINT_PDF_PATH) {
+    nofile.style.display = 'none';
+    iframe.style.display = 'block';
+    iframe.src = COMPLAINT_PDF_PATH;
+  } else {
+    iframe.style.display = 'none';
+    nofile.style.display = 'flex';
+  }
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closePDFModal() {
+  document.getElementById('pdf-modal').classList.remove('open');
+  document.getElementById('pdf-modal-iframe').src = '';
+  document.body.style.overflow = '';
+}
+
+function closePDFModalOutside(e) {
+  if (e.target.id === 'pdf-modal') closePDFModal();
+}
+
+function escHtml(s) {
+  // Allow <strong>, <em>, <br> tags from i18n; otherwise text-safe
+  return s == null ? '' : String(s);
+}
+
+/* ────────────────────────────────────────────────────────────────────────────── */
+/* Init                                                                          */
+/* ────────────────────────────────────────────────────────────────────────────── */
+document.getElementById('sign-gform-btn').href    = SIGN_FORM_URL;
+document.getElementById('contact-gform-btn').href = CONTACT_FORM_URL;
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closePDFModal();
+});
+renderTL();
+renderArt();
+renderHomePreview();
+</script>
+</body>
+</html>
