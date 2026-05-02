@@ -4,6 +4,7 @@
       "date": "2026-03-24",
       "tag": "submit",
       "title_ja": "訴状提出（東京地方裁判所）",
+      "title_en": "Filing of Complaint (Tokyo District Court)",
       "file": "30名国賠訴状（東京地裁提出版主張部分のみ版）.pdf",
       "isComplaint": false,
       "id": 1777715418473
@@ -52,5 +53,5 @@
       "source_en": "Osaka High Court"
     }
   ],
-  "updatedAt": "2026-05-02T11:01:52.377Z"
+  "updatedAt": "2026-05-02T11:04:05.793Z"
 }
