@@ -207,9 +207,9 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
       <h1 class="hero-title" data-i18n="hero_title">子どもの<em>連れ去り・引き離し</em>に対する<br>国の立法不作為を問う</h1>
       <p class="hero-sub" data-i18n="hero_sub">30名弱の原告が団結し、子の連れ去りを放置した国に対して国家賠償を請求しています。「親が子を養育する自由」「子が親に養育される自由」は憲法13条が保障する基本的人権です。</p>
       <div class="hero-stats">
-        <div class="stat"><span class="stat-n">≈30</span><span class="stat-l" data-i18n="stat_plaintiffs">原告数</span></div>
-        <div class="stat"><span class="stat-n">3</span><span class="stat-l" data-i18n="stat_issues">主要争点</span></div>
-        <div class="stat"><span class="stat-n">R8.3</span><span class="stat-l" data-i18n="stat_filed">提訴</span></div>
+        <div class="stat"><span class="stat-n" id="stat1-n">≈30</span><span class="stat-l" data-i18n="stat_plaintiffs">原告数</span></div>
+        <div class="stat"><span class="stat-n" id="stat2-n">3</span><span class="stat-l" data-i18n="stat_issues">主要争点</span></div>
+        <div class="stat"><span class="stat-n" id="stat3-n">R8.3</span><span class="stat-l" data-i18n="stat_filed">提訴</span></div>
       </div>
     </div>
   </div>
@@ -864,9 +864,35 @@ renderHomePreview();
         }
       }
 
+      // Apply content overrides (stats numbers, hero, alert, overview)
+      if (data.content) {
+        if (data.content.stat1_n != null) {
+          var st1 = document.getElementById('stat1-n'); if (st1) st1.textContent = data.content.stat1_n;
+        }
+        if (data.content.stat2_n != null) {
+          var st2 = document.getElementById('stat2-n'); if (st2) st2.textContent = data.content.stat2_n;
+        }
+        if (data.content.stat3_n != null) {
+          var st3 = document.getElementById('stat3-n'); if (st3) st3.textContent = data.content.stat3_n;
+        }
+        if (data.content.ja) {
+          Object.keys(data.content.ja).forEach(function(k){
+            if (data.content.ja[k]) I18N.ja[k] = data.content.ja[k];
+          });
+        }
+        if (data.content.en) {
+          Object.keys(data.content.en).forEach(function(k){
+            if (data.content.en[k]) I18N.en[k] = data.content.en[k];
+          });
+        }
+      }
+
       // Ensure sort by date desc
       entries.sort(function(a, b) { return (b.date || '').localeCompare(a.date || ''); });
       articles.sort(function(a, b) { return (b.date || '').localeCompare(a.date || ''); });
+
+      // Re-apply current language to pick up I18N overrides
+      setLang(currentLang);
       renderTL();
       renderArt();
       renderHomePreview();
