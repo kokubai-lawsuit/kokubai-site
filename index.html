@@ -4,19 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title id="page-title">子の連れ去り国賠訴訟 — 公式サイト</title>
-<meta name="description" content="子の連れ去り・面会交流妨害・交互監護拒否に関する国会の立法不作為を問う、30名弱の原告による国家賠償請求訴訟の公式サイト。訴状・訴訟経緯・関連判例を公開しています。">
+<meta name="description" content="子の連れ去り・面会交流妨害・交互監護拒否に関する国会の立法不作為を問う、30名の原告による国家賠償請求訴訟の公式サイト。訴状・訴訟経緯・関連判例を公開しています。">
 <meta name="theme-color" content="#1a2744">
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="子の連れ去り国賠訴訟 — 公式サイト">
-<meta property="og:description" content="子の連れ去りに関する立法不作為を問う国家賠償請求訴訟。原告30名弱・東京地方裁判所・令和8年3月23日提訴。">
+<meta property="og:description" content="子の連れ去りに関する立法不作為を問う国家賠償請求訴訟。原告30名・東京地方裁判所・令和8年3月23日提訴。">
 <meta property="og:site_name" content="子の連れ去り国賠訴訟">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:locale:alternate" content="en_US">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="子の連れ去り国賠訴訟 — 公式サイト">
-<meta name="twitter:description" content="子の連れ去りに関する立法不作為を問う国家賠償請求訴訟。原告30名弱・東京地方裁判所。">
+<meta name="twitter:description" content="子の連れ去りに関する立法不作為を問う国家賠償請求訴訟。原告30名・東京地方裁判所。">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -205,9 +205,9 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
     <div class="hero-inner">
       <div class="hero-badge" data-i18n="hero_badge">国家賠償請求訴訟 — 東京地方裁判所</div>
       <h1 class="hero-title" data-i18n="hero_title">子どもの<em>連れ去り・引き離し</em>に対する<br>国の立法不作為を問う</h1>
-      <p class="hero-sub" data-i18n="hero_sub">30名弱の原告が団結し、子の連れ去りを放置した国に対して国家賠償を請求しています。「親が子を養育する自由」「子が親に養育される自由」は憲法13条が保障する基本的人権です。</p>
+      <p class="hero-sub" data-i18n="hero_sub">30名の原告が団結し、子の連れ去りを放置した国に対して国家賠償を請求しています。「親が子を養育する自由」「子が親に養育される自由」は憲法13条が保障する基本的人権です。</p>
       <div class="hero-stats">
-        <div class="stat"><span class="stat-n">≈30</span><span class="stat-l" data-i18n="stat_plaintiffs">原告数</span></div>
+        <div class="stat"><span class="stat-n">30</span><span class="stat-l" data-i18n="stat_plaintiffs">原告数</span></div>
         <div class="stat"><span class="stat-n">3</span><span class="stat-l" data-i18n="stat_issues">主要争点</span></div>
         <div class="stat"><span class="stat-n">R8.3</span><span class="stat-l" data-i18n="stat_filed">提訴</span></div>
       </div>
@@ -307,7 +307,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
       <h3 data-i18n="complaint_info_h">訴状の基本情報</h3>
       <div class="c-meta">
         <div class="c-meta-item"><strong data-i18n="complaint_date_label">提出日：</strong><span data-i18n="complaint_date">令和8年（2026年）3月23日</span></div>
-        <div class="c-meta-item"><strong data-i18n="complaint_plaintiffs_label">原告数：</strong><span data-i18n="complaint_plaintiffs">30名弱</span></div>
+        <div class="c-meta-item"><strong data-i18n="complaint_plaintiffs_label">原告数：</strong><span data-i18n="complaint_plaintiffs">30名</span></div>
         <div class="c-meta-item"><strong data-i18n="complaint_def_label">被告：</strong><span data-i18n="complaint_def">国</span></div>
         <div class="c-meta-item"><strong data-i18n="complaint_type_label">事件種別：</strong><span data-i18n="complaint_type">損害賠償請求事件</span></div>
       </div>
@@ -429,7 +429,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
    ────────────────────────────────────────────────────────────────────────────── */
 
 // 訴状PDFのパス（pdfs/ ディレクトリに配置してください。空のままだと「準備中」と表示されます）
-var COMPLAINT_PDF_PATH = 'pdfs/sojo.pdf'; // 例: 'pdfs/sojo.pdf'
+var COMPLAINT_PDF_PATH = ''; // 例: 'pdfs/sojo.pdf'
 
 // Googleフォームの URL（賛同署名・お問い合わせ）
 var SIGN_FORM_URL    = 'https://forms.gle/PLACEHOLDER_SIGN_FORM';
@@ -443,7 +443,7 @@ var I18N = {
     nav_timeline:'訴訟経緯', nav_articles:'関連記事', nav_sign:'支援・お問い合わせ',
     hero_badge:'国家賠償請求訴訟 — 東京地方裁判所',
     hero_title:'子どもの<em>連れ去り・引き離し</em>に対する<br>国の立法不作為を問う',
-    hero_sub:'30名弱の原告が団結し、子の連れ去りを放置した国に対して国家賠償を請求しています。「親が子を養育する自由」「子が親に養育される自由」は憲法13条が保障する基本的人権です。',
+    hero_sub:'30名の原告が団結し、子の連れ去りを放置した国に対して国家賠償を請求しています。「親が子を養育する自由」「子が親に養育される自由」は憲法13条が保障する基本的人権です。',
     stat_plaintiffs:'原告数', stat_issues:'主要争点', stat_filed:'提訴',
     alert_title:'最新状況 — 令和8年3月23日 訴状提出',
     alert_body:'東京地方裁判所民事部に訴状を提出しました。原告代理人：作花知志弁護士（作花法律事務所・岡山）。今後の期日情報は「訴訟経緯」ページで随時更新します。',
@@ -468,7 +468,7 @@ var I18N = {
     complaint_h1:'訴状', complaint_sub:'令和8年3月23日 東京地方裁判所提出',
     complaint_info_h:'訴状の基本情報',
     complaint_date_label:'提出日：', complaint_date:'令和8年（2026年）3月23日',
-    complaint_plaintiffs_label:'原告数：', complaint_plaintiffs:'30名弱',
+    complaint_plaintiffs_label:'原告数：', complaint_plaintiffs:'30名',
     complaint_def_label:'被告：', complaint_def:'国',
     complaint_type_label:'事件種別：', complaint_type:'損害賠償請求事件',
     complaint_dl:'📄 訴状を見る',
@@ -521,7 +521,7 @@ var I18N = {
     nav_timeline:'Case Timeline', nav_articles:'Related Articles', nav_sign:'Support / Contact',
     hero_badge:'State Compensation Lawsuit — Tokyo District Court',
     hero_title:'Challenging the State\'s <em>Legislative Inaction</em><br>on Child Abduction &amp; Parental Separation',
-    hero_sub:'Nearly 30 plaintiffs united to seek state compensation against the government\'s prolonged failure to legislate against child abduction. The freedom of parents to raise their children and children to be raised by their parents is a fundamental right protected under Article 13 of the Constitution.',
+    hero_sub:'30 plaintiffs united to seek state compensation against the government\'s prolonged failure to legislate against child abduction. The freedom of parents to raise their children and children to be raised by their parents is a fundamental right protected under Article 13 of the Constitution.',
     stat_plaintiffs:'Plaintiffs', stat_issues:'Key Issues', stat_filed:'Filed',
     alert_title:'Latest — Complaint Filed on March 23, 2026',
     alert_body:'The complaint was filed with the Civil Division of the Tokyo District Court. Lead counsel: Attorney Satoshi Sakka (Sakka Law Office, Okayama). Court dates will be updated on the Case Timeline page.',
@@ -546,7 +546,7 @@ var I18N = {
     complaint_h1:'Complaint', complaint_sub:'Filed March 23, 2026 — Tokyo District Court',
     complaint_info_h:'Complaint Overview',
     complaint_date_label:'Date Filed:', complaint_date:'March 23, 2026',
-    complaint_plaintiffs_label:'No. of Plaintiffs:', complaint_plaintiffs:'~30',
+    complaint_plaintiffs_label:'No. of Plaintiffs:', complaint_plaintiffs:'30',
     complaint_def_label:'Defendant:', complaint_def:'The State',
     complaint_type_label:'Case Type:', complaint_type:'Damages Claim',
     complaint_dl:'📄 View Complaint',
@@ -603,9 +603,9 @@ var entries = [
   {
     id: 1, date: '2026-03-23', tag: 'submit',
     title_ja: '訴状提出（東京地方裁判所）',
-    body_ja: '30名弱の原告が訴状を提出。子の連れ去り・面会交流妨害・交互監護拒否に関する国会の立法不作為を理由に国家賠償を請求。原告代理人：作花知志弁護士。',
+    body_ja: '30名の原告が訴状を提出。子の連れ去り・面会交流妨害・交互監護拒否に関する国会の立法不作為を理由に国家賠償を請求。原告代理人：作花知志弁護士。',
     title_en: 'Complaint filed (Tokyo District Court)',
-    body_en: 'Nearly 30 plaintiffs filed a state-compensation complaint citing the National Diet\'s legislative inaction on child abduction, obstruction of visitation, and refusal of shared custody. Lead counsel: Attorney Satoshi Sakka.',
+    body_en: '30 plaintiffs filed a state-compensation complaint citing the National Diet\'s legislative inaction on child abduction, obstruction of visitation, and refusal of shared custody. Lead counsel: Attorney Satoshi Sakka.',
     isComplaint: true
   }
 ];
@@ -848,6 +848,22 @@ renderHomePreview();
       if (!data) return;
       if (Array.isArray(data.entries))  entries  = data.entries;
       if (Array.isArray(data.articles)) articles = data.articles;
+
+      // Apply runtime settings (URLs, PDF path)
+      if (data.settings) {
+        if (data.settings.signFormUrl) {
+          var s = document.getElementById('sign-gform-btn');
+          if (s) s.href = data.settings.signFormUrl;
+        }
+        if (data.settings.contactFormUrl) {
+          var c = document.getElementById('contact-gform-btn');
+          if (c) c.href = data.settings.contactFormUrl;
+        }
+        if (typeof data.settings.complaintPdfPath === 'string') {
+          COMPLAINT_PDF_PATH = data.settings.complaintPdfPath;
+        }
+      }
+
       // Ensure sort by date desc
       entries.sort(function(a, b) { return (b.date || '').localeCompare(a.date || ''); });
       articles.sort(function(a, b) { return (b.date || '').localeCompare(a.date || ''); });
