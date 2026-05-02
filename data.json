@@ -26,7 +26,7 @@
     "complaintPdfPath": "pdfs/sojo.pdf"
   },
   "content": {
-    "stat1_n": "30弱",
+    "stat1_n": "30",
     "stat2_n": "3",
     "stat3_n": "R8.3",
     "ja": {
@@ -52,5 +52,5 @@
       "ov_value": "¥1,485,000<br>Filing Fee: ¥13,000"
     }
   },
-  "updatedAt": "2026-05-02T12:09:54.935Z"
+  "updatedAt": "2026-05-02T12:35:22.935Z"
 }
