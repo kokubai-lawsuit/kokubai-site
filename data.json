@@ -21,9 +21,9 @@
     }
   ],
   "settings": {
-    "signFormUrl": "",
-    "contactFormUrl": "",
-    "complaintPdfPath": ""
+    "signFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdnyGmYBLkvMJHYgB1i0rxNpX6f5GTMKzsNZTf_VEbt1MlyAg/viewform",
+    "contactFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdnyGmYBLkvMJHYgB1i0rxNpX6f5GTMKzsNZTf_VEbt1MlyAg/viewform",
+    "complaintPdfPath": "pdfs/sojo.pdf"
   },
   "content": {
     "stat1_n": "30弱",
@@ -52,5 +52,5 @@
       "ov_value": "¥1,485,000<br>Filing Fee: ¥13,000"
     }
   },
-  "updatedAt": "2026-05-02T12:03:28.184Z"
+  "updatedAt": "2026-05-02T12:07:41.901Z"
 }
