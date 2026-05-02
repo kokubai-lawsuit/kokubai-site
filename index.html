@@ -51,6 +51,28 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
   .fr{grid-template-columns:1fr}
   .tl-item{grid-template-columns:70px 1fr}
   .hero-stats{gap:16px}
+  /* Keep CTA buttons on one line; allow horizontal scroll in their card */
+  .pdf-dl,.home-doc-btn{
+    white-space:nowrap;
+  }
+  .contact-card,
+  .sign-cta-box,
+  .card{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+  }
+  /* Subtle visual hint that horizontal scroll is possible */
+  .contact-card::-webkit-scrollbar,
+  .sign-cta-box::-webkit-scrollbar,
+  .card::-webkit-scrollbar{
+    height:4px;
+  }
+  .contact-card::-webkit-scrollbar-thumb,
+  .sign-cta-box::-webkit-scrollbar-thumb,
+  .card::-webkit-scrollbar-thumb{
+    background:rgba(26,39,68,0.3);
+    border-radius:2px;
+  }
 }
 .page{display:none;animation:fadeIn 0.25s ease}
 .page.active{display:block}
