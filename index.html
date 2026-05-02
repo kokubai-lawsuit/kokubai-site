@@ -416,6 +416,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
   <div class="pdf-modal">
     <div class="pdf-modal-bar">
       <span class="pdf-modal-title" id="pdf-modal-title">訴状PDF（主張部分）</span>
+      <a id="pdf-modal-newtab" href="#" target="_blank" rel="noopener" style="background:rgba(255,255,255,0.18);color:#fff;font-size:11px;padding:4px 10px;border-radius:5px;text-decoration:none;margin-right:auto;margin-left:14px">↗ 新規タブで開く</a>
       <button class="pdf-modal-close" onclick="closePDFModal()" aria-label="閉じる">✕</button>
     </div>
     <div id="pdf-modal-body" style="flex:1;display:flex;flex-direction:column">
@@ -797,17 +798,30 @@ function renderHomePreview() {
   }
 }
 
+function isMobileDevice() {
+  return window.innerWidth < 768 || /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
 function openComplaintPDF() {
-  var modal  = document.getElementById('pdf-modal');
-  var iframe = document.getElementById('pdf-modal-iframe');
-  var nofile = document.getElementById('pdf-modal-nofile');
+  // On mobile, iframes can't reliably display multi-page PDFs.
+  // Open the PDF in a new tab so the device's native PDF viewer is used.
+  if (COMPLAINT_PDF_PATH && isMobileDevice()) {
+    window.open(COMPLAINT_PDF_PATH, '_blank', 'noopener');
+    return;
+  }
+  var modal   = document.getElementById('pdf-modal');
+  var iframe  = document.getElementById('pdf-modal-iframe');
+  var nofile  = document.getElementById('pdf-modal-nofile');
+  var newtab  = document.getElementById('pdf-modal-newtab');
   if (COMPLAINT_PDF_PATH) {
     nofile.style.display = 'none';
     iframe.style.display = 'block';
     iframe.src = COMPLAINT_PDF_PATH;
+    if (newtab) { newtab.href = COMPLAINT_PDF_PATH; newtab.style.display = 'inline-block'; }
   } else {
     iframe.style.display = 'none';
     nofile.style.display = 'flex';
+    if (newtab) newtab.style.display = 'none';
   }
   modal.classList.add('open');
   document.body.style.overflow = 'hidden';
