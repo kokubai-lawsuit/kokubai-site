@@ -51,27 +51,35 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
   .fr{grid-template-columns:1fr}
   .tl-item{grid-template-columns:70px 1fr}
   .hero-stats{gap:16px}
-  /* Keep CTA buttons on one line; allow horizontal scroll in their card */
+  /* Prevent page-wide horizontal scroll */
+  html,body{overflow-x:hidden;max-width:100%}
+  .page-wrap,.wrap{max-width:100%;overflow-x:hidden}
+  /* Keep CTA buttons on one line */
   .pdf-dl,.home-doc-btn{
     white-space:nowrap;
+    display:inline-flex;
   }
+  /* CTA cards: allow horizontal scroll inside */
   .contact-card,
-  .sign-cta-box,
-  .card{
-    overflow-x:auto;
+  .sign-cta-box{
+    overflow-x:auto !important;
     -webkit-overflow-scrolling:touch;
   }
-  /* Subtle visual hint that horizontal scroll is possible */
+  /* Visual hint of scrollability */
   .contact-card::-webkit-scrollbar,
-  .sign-cta-box::-webkit-scrollbar,
-  .card::-webkit-scrollbar{
+  .sign-cta-box::-webkit-scrollbar{
     height:4px;
   }
   .contact-card::-webkit-scrollbar-thumb,
-  .sign-cta-box::-webkit-scrollbar-thumb,
-  .card::-webkit-scrollbar-thumb{
+  .sign-cta-box::-webkit-scrollbar-thumb{
     background:rgba(26,39,68,0.3);
     border-radius:2px;
+  }
+  /* Force the CTA buttons to maintain their natural width inside the scroll area */
+  .contact-card .pdf-dl,
+  .sign-cta-box .pdf-dl{
+    flex-shrink:0;
+    min-width:max-content;
   }
 }
 .page{display:none;animation:fadeIn 0.25s ease}
