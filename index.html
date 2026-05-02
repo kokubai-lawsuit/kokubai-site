@@ -54,33 +54,32 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
   /* Prevent page-wide horizontal scroll */
   html,body{overflow-x:hidden;max-width:100%}
   .page-wrap,.wrap{max-width:100%;overflow-x:hidden}
-  /* Keep CTA buttons on one line */
-  .pdf-dl,.home-doc-btn{
-    white-space:nowrap;
-    display:inline-flex;
-  }
-  /* CTA cards: allow horizontal scroll inside */
-  .contact-card,
-  .sign-cta-box{
-    overflow-x:auto !important;
-    -webkit-overflow-scrolling:touch;
-  }
-  /* Visual hint of scrollability */
-  .contact-card::-webkit-scrollbar,
-  .sign-cta-box::-webkit-scrollbar{
-    height:4px;
-  }
-  .contact-card::-webkit-scrollbar-thumb,
-  .sign-cta-box::-webkit-scrollbar-thumb{
-    background:rgba(26,39,68,0.3);
-    border-radius:2px;
-  }
-  /* Force the CTA buttons to maintain their natural width inside the scroll area */
-  .contact-card .pdf-dl,
-  .sign-cta-box .pdf-dl{
-    flex-shrink:0;
-    min-width:max-content;
-  }
+}
+
+/* Always-on horizontal scroll container for CTAs (works on all screen sizes) */
+.cta-scroll{
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+  white-space:nowrap;
+  display:block;
+  margin:0 -4px;
+  padding:0 4px 6px;
+  -ms-overflow-style:auto;
+  scrollbar-width:thin;
+}
+.cta-scroll::-webkit-scrollbar{height:4px}
+.cta-scroll::-webkit-scrollbar-track{background:transparent}
+.cta-scroll::-webkit-scrollbar-thumb{
+  background:rgba(26,39,68,0.3);
+  border-radius:2px;
+}
+.sign-cta-box .cta-scroll::-webkit-scrollbar-thumb{
+  background:rgba(255,255,255,0.4);
+}
+.cta-scroll .pdf-dl{
+  display:inline-flex;
+  white-space:nowrap;
+  flex-shrink:0;
 }
 .page{display:none;animation:fadeIn 0.25s ease}
 .page.active{display:block}
@@ -414,7 +413,9 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
     <div class="sign-cta-box">
       <h2 data-i18n="sign_cta_h">賛同署名にご協力ください</h2>
       <p data-i18n="sign_cta_p">あなたの一筆が、立法府・司法府への大きな後押しになります。<br>署名は外部のGoogleフォームから受け付けています。</p>
-      <a id="sign-gform-btn" href="#" target="_blank" rel="noopener" class="pdf-dl" data-i18n="sign_open_btn">✍️ 署名フォームを開く</a>
+      <div class="cta-scroll">
+        <a id="sign-gform-btn" href="#" target="_blank" rel="noopener" class="pdf-dl" data-i18n="sign_open_btn">✍️ 署名フォームを開く</a>
+      </div>
     </div>
 
     <div class="sign-why">
@@ -430,7 +431,9 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
     <div class="contact-card">
       <h3 data-i18n="contact_h">お問い合わせ</h3>
       <p style="font-size:13px;color:var(--text-muted);margin-bottom:16px" data-i18n="contact_intro">取材・原告参加のご相談・その他のお問い合わせは、Googleフォームよりご連絡ください。弁護士・原告団にて対応いたします。</p>
-      <a id="contact-gform-btn" href="#" target="_blank" rel="noopener" class="pdf-dl" data-i18n="contact_gform_btn">📝 お問い合わせフォームを開く</a>
+      <div class="cta-scroll">
+        <a id="contact-gform-btn" href="#" target="_blank" rel="noopener" class="pdf-dl" data-i18n="contact_gform_btn">📝 お問い合わせフォームを開く</a>
+      </div>
       <p style="font-size:11px;color:var(--text-light);margin-top:12px" data-i18n="contact_privacy">※ いただいた情報は弁護士・原告団のみで管理します。</p>
     </div>
   </div>
