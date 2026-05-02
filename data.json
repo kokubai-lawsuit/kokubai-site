@@ -20,5 +20,37 @@
       "id": 1777717664343
     }
   ],
-  "updatedAt": "2026-05-02T11:07:02.310Z"
+  "settings": {
+    "signFormUrl": "",
+    "contactFormUrl": "",
+    "complaintPdfPath": ""
+  },
+  "content": {
+    "stat1_n": "30弱",
+    "stat2_n": "3",
+    "stat3_n": "R8.3",
+    "ja": {
+      "hero_sub": "30名弱の原告が団結し、子の連れ去りを放置した国に対して国家賠償を請求しています。「親が子を養育する自由」「子が親に養育される自由」は憲法13条が保障する基本的人権です。",
+      "alert_title": "最新状況 — 令和8年3月23日 訴状提出",
+      "alert_body": "東京地方裁判所民事部に訴状を提出しました。原告代理人：作花知志弁護士（作花法律事務所・岡山）。今後の期日情報は「訴訟経緯」ページで随時更新します。",
+      "ov_filed": "令和8年（2026年）3月23日",
+      "ov_court": "東京地方裁判所 民事部",
+      "ov_def": "国（代表者：法務大臣）",
+      "ov_atty": "弁護士 作花知志（作花法律事務所・岡山）",
+      "ov_amount": "1名あたり55,000円（総計165万円）",
+      "ov_value": "148万5,000円 貼用印紙：1万3,000円"
+    },
+    "en": {
+      "hero_sub": "Nearly 30 plaintiffs united to seek state compensation against the government's prolonged failure to legislate against child abduction. The freedom of parents to raise their children and children to be raised by their parents is a fundamental right protected under Article 13 of the Constitution.",
+      "alert_title": "Latest — Complaint Filed on March 23, 2026",
+      "alert_body": "The complaint was filed with the Civil Division of the Tokyo District Court. Lead counsel: Attorney Satoshi Sakka (Sakka Law Office, Okayama). Court dates will be updated on the Case Timeline page.",
+      "ov_filed": "March 23, 2026",
+      "ov_court": "Tokyo District Court, Civil Division",
+      "ov_def": "The State (rep. by the Minister of Justice)",
+      "ov_atty": "Attorney Satoshi Sakka (Sakka Law Office, Okayama)",
+      "ov_amount": "¥55,000 per plaintiff(¥1.65M total)",
+      "ov_value": "¥1,485,000<br>Filing Fee: ¥13,000"
+    }
+  },
+  "updatedAt": "2026-05-02T12:02:20.390Z"
 }
