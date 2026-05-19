@@ -224,7 +224,8 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
       <button class="nav-link" onclick="goPage('complaint',this)" data-i18n-nav="nav_complaint">訴状</button>
       <button class="nav-link" onclick="goPage('timeline',this)" data-i18n-nav="nav_timeline">訴訟経緯</button>
       <button class="nav-link" onclick="goPage('articles',this)" data-i18n-nav="nav_articles">関連記事</button>
-      <button class="nav-link" onclick="goPage('sign',this)" data-i18n-nav="nav_sign">支援・お問い合わせ</button>
+      <button class="nav-link" onclick="goPage('sign',this)" data-i18n-nav="nav_sign">✍️ 署名</button>
+      <button class="nav-link" onclick="goPage('contact',this)" data-i18n-nav="nav_contact">📝 問い合わせ</button>
     </div>
     <div class="lang-toggle" role="group" aria-label="Language">
       <button class="lang-btn active" id="btn-ja" onclick="setLang('ja')" aria-label="日本語">JA</button>
@@ -403,10 +404,10 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
   <footer class="footer"><div data-i18n="footer_team">子の連れ去り国賠訴訟 原告団</div></footer>
 </div>
 
-<!-- SIGN / CONTACT -->
+<!-- SIGN PAGE -->
 <div id="page-sign" class="page">
   <div class="page-header">
-    <h1 data-i18n="sign_h1">支援・お問い合わせ</h1>
+    <h1 data-i18n="sign_h1">✍️ 賛同署名のお願い</h1>
     <p data-i18n="sign_sub">この訴訟に賛同し、子どもの権利を守る活動を支えてください</p>
   </div>
   <div class="page-wrap">
@@ -427,7 +428,21 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
         <li data-i18n="sign_why4">署名・応援メッセージは裁判の記録として残され、世論形成にも活用します</li>
       </ul>
     </div>
+  </div>
+  <footer class="footer">
+    <div data-i18n="footer_team">子の連れ去り国賠訴訟 原告団</div>
+    <div data-i18n="footer_atty">弁護士 作花知志 ／ 作花法律事務所 岡山市北区本町3番13号</div>
+    <div data-i18n="footer_tel">TEL: 086-206-2331 ／ FAX: 086-206-2332</div>
+  </footer>
+</div>
 
+<!-- CONTACT PAGE -->
+<div id="page-contact" class="page">
+  <div class="page-header">
+    <h1 data-i18n="contact_h1">📝 お問い合わせ</h1>
+    <p data-i18n="contact_sub">取材・原告参加・法律相談などのご相談はこちらから</p>
+  </div>
+  <div class="page-wrap">
     <div class="contact-card">
       <h3 data-i18n="contact_h">お問い合わせ</h3>
       <p style="font-size:13px;color:var(--text-muted);margin-bottom:16px" data-i18n="contact_intro">取材・原告参加のご相談・その他のお問い合わせは、Googleフォームよりご連絡ください。弁護士・原告団にて対応いたします。</p>
@@ -479,7 +494,7 @@ var CONTACT_FORM_URL = 'https://forms.gle/PLACEHOLDER_CONTACT_FORM';
 var I18N = {
   ja: {
     nav_logo:'子の連れ去り国賠訴訟', nav_home:'ホーム', nav_complaint:'訴状',
-    nav_timeline:'訴訟経緯', nav_articles:'関連記事', nav_sign:'支援・お問い合わせ',
+    nav_timeline:'訴訟経緯', nav_articles:'関連記事', nav_sign:'✍️ 署名', nav_contact:'📝 問い合わせ',
     hero_badge:'国家賠償請求訴訟 — 東京地方裁判所',
     hero_title:'子どもの<em>連れ去り・引き離し</em>に対する<br>国の立法不作為を問う',
     hero_sub:'30名弱の原告が団結し、子の連れ去りを放置した国に対して国家賠償を請求しています。「親が子を養育する自由」「子が親に養育される自由」は憲法13条が保障する基本的人権です。',
@@ -529,7 +544,8 @@ var I18N = {
     ptab_all:'すべて', ptab_submit:'原告書面', ptab_response:'被告書面',
     ptab_hearing:'期日', ptab_court:'裁判所',
     art_h1:'関連記事・資料', art_sub:'報道・論文・政策動向・判例を収集しています',
-    sign_h1:'支援・お問い合わせ', sign_sub:'この訴訟に賛同し、子どもの権利を守る活動を支えてください',
+    sign_h1:'✍️ 賛同署名のお願い', sign_sub:'この訴訟に賛同し、子どもの権利を守る活動を支えてください',
+    contact_h1:'📝 お問い合わせ', contact_sub:'取材・原告参加・法律相談などのご相談はこちらから',
     sign_cta_h:'賛同署名にご協力ください',
     sign_cta_p:'あなたの一筆が、立法府・司法府への大きな後押しになります。<br>署名は外部のGoogleフォームから受け付けています。',
     sign_open_btn:'✍️ 署名フォームを開く',
@@ -557,7 +573,7 @@ var I18N = {
   },
   en: {
     nav_logo:'Child Abduction State Compensation Lawsuit', nav_home:'Home', nav_complaint:'Complaint',
-    nav_timeline:'Case Timeline', nav_articles:'Related Articles', nav_sign:'Support / Contact',
+    nav_timeline:'Case Timeline', nav_articles:'Related Articles', nav_sign:'✍️ Sign', nav_contact:'📝 Contact',
     hero_badge:'State Compensation Lawsuit — Tokyo District Court',
     hero_title:'Challenging the State\'s <em>Legislative Inaction</em><br>on Child Abduction &amp; Parental Separation',
     hero_sub:'Nearly 30 plaintiffs united to seek state compensation against the government\'s prolonged failure to legislate against child abduction. The freedom of parents to raise their children and children to be raised by their parents is a fundamental right protected under Article 13 of the Constitution.',
@@ -607,7 +623,8 @@ var I18N = {
     ptab_all:'All', ptab_submit:'Plaintiff\'s Filings', ptab_response:'Defendant\'s Filings',
     ptab_hearing:'Hearings', ptab_court:'Court Orders',
     art_h1:'Related Articles & Resources', art_sub:'Collecting news, academic papers, policy updates, and precedents.',
-    sign_h1:'Support / Contact', sign_sub:'Stand with us to protect children\'s rights.',
+    sign_h1:'✍️ Sign in Support', sign_sub:'Stand with us to protect children\'s rights.',
+    contact_h1:'📝 Contact', contact_sub:'For press, plaintiff enquiries, or legal consultation.',
     sign_cta_h:'Add Your Signature',
     sign_cta_p:'Your signature is a powerful push for the legislature and judiciary.<br>Signatures are collected via an external Google Form.',
     sign_open_btn:'✍️ Open the Signature Form',
