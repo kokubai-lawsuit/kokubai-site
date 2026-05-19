@@ -1,32 +1,58 @@
 {
   "entries": [
     {
-      "date": "2026-03-24",
+      "id": 1,
+      "date": "2026-03-23",
       "tag": "submit",
       "title_ja": "訴状提出（東京地方裁判所）",
-      "title_en": "Filing of Complaint (Tokyo District Court)",
-      "file": "30名国賠訴状（東京地裁提出版主張部分のみ版）.pdf",
-      "isComplaint": false,
-      "id": 1777715418473
+      "body_ja": "30名の原告が訴状を提出。子の連れ去り・面会交流妨害・交互監護拒否に関する国会の立法不作為を理由に国家賠償を請求。原告代理人：作花知志弁護士。",
+      "title_en": "Complaint filed (Tokyo District Court)",
+      "body_en": "30 plaintiffs filed a state-compensation complaint citing the National Diet's legislative inaction on child abduction, obstruction of visitation, and refusal of shared custody. Lead counsel: Attorney Satoshi Sakka.",
+      "isComplaint": true
     }
   ],
   "articles": [
     {
-      "date": "2026-03-07",
-      "tag": "media",
-      "title_ja": "子連れ去り規制求め、国を提訴へ　父母ら約30人、1人5万円請求",
-      "title_en": "Seeking to regulate the removal of children, about 30 parents filed a lawsuit against the country, claiming 50,000 yen per person",
-      "url": "https://news.yahoo.co.jp/articles/298cbb98a4db9af6e05264a17ec0c8118127fb60",
-      "id": 1777717664343
+      "id": 1,
+      "date": "2024-02-07",
+      "tag": "law",
+      "title_ja": "大阪高裁令和6年2月7日判決（令和5年（ネ）第1913号）",
+      "body_ja": "「親が子を養育する自由」「子が親に養育される自由」は憲法13条によって保障される人格権の一内容であると判示。本訴訟の主要な法的根拠の一つ。",
+      "title_en": "Osaka High Court Judgment, Feb. 7, 2024 (Case No. 1913, Reiwa 5)",
+      "body_en": "Held that the freedom of a parent to raise a child and the freedom of a child to be raised by a parent are part of the right to personality protected by Article 13.",
+      "source_ja": "大阪高等裁判所",
+      "source_en": "Osaka High Court"
+    },
+    {
+      "id": 2,
+      "date": "2024-02-22",
+      "tag": "law",
+      "title_ja": "東京高裁令和6年2月22日判決（令和5年（ネ）第3026号）",
+      "body_ja": "子が親から養育監護を受ける自由権は人格権として憲法13条で保障されると判示。",
+      "title_en": "Tokyo High Court Judgment, Feb. 22, 2024 (Case No. 3026, Reiwa 5)",
+      "body_en": "Held that a child's right to be raised and cared for by their parent is protected as a personality right under Article 13.",
+      "source_ja": "東京高等裁判所",
+      "source_en": "Tokyo High Court"
+    },
+    {
+      "id": 3,
+      "date": "2024-07-03",
+      "tag": "law",
+      "title_ja": "最高裁大法廷令和6年7月3日判決（令和5年（受）第1319号）",
+      "body_ja": "リプロダクティブ権（子を産み育てるかを意思決定する権利）に関する重要判示。",
+      "title_en": "Supreme Court Grand Bench Judgment, Jul. 3, 2024 (Case No. 1319, Reiwa 5)",
+      "body_en": "Landmark Grand Bench ruling on reproductive rights.",
+      "source_ja": "最高裁判所",
+      "source_en": "Supreme Court of Japan"
     }
   ],
   "settings": {
-    "signFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdnyGmYBLkvMJHYgB1i0rxNpX6f5GTMKzsNZTf_VEbt1MlyAg/viewform",
+    "signFormUrl": "https://docs.google.com/forms/d/1117Wnvop-AKmK7e-II3X84Ow2MgHpBknbA_xFDnD_Rc/edit",
     "contactFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdnyGmYBLkvMJHYgB1i0rxNpX6f5GTMKzsNZTf_VEbt1MlyAg/viewform",
     "complaintPdfPath": "pdfs/sojo.pdf"
   },
   "content": {
-    "stat1_n": "30",
+    "stat1_n": "≈30",
     "stat2_n": "3",
     "stat3_n": "R8.3",
     "ja": {
@@ -36,9 +62,21 @@
       "ov_filed": "令和8年（2026年）3月23日",
       "ov_court": "東京地方裁判所 民事部",
       "ov_def": "国（代表者：法務大臣）",
-      "ov_atty": "弁護士 作花知志（作花法律事務所・岡山）",
-      "ov_amount": "1名あたり55,000円（総計165万円）",
-      "ov_value": "148万5,000円 貼用印紙：1万3,000円"
+      "ov_atty": "弁護士 作花知志<br>（作花法律事務所・岡山）",
+      "ov_amount": "1名あたり55,000円<br>（総計165万円）",
+      "ov_value": "148万5,000円<br>貼用印紙：1万3,000円",
+      "sign_cta_h": "賛同署名にご協力ください",
+      "sign_cta_p": "あなたの一筆が、立法府・司法府への大きな後押しになります。<br>署名は外部のGoogleフォームから受け付けています。",
+      "sign_open_btn": "✍️ 署名フォームを開く",
+      "sign_why_h": "なぜ署名が必要か",
+      "sign_why1": "子の連れ去りは毎年数千件起きており、引き離された親と子が深刻な人権侵害を受け続けています",
+      "sign_why2": "日本は児童の権利条約を批准しながら、国内の実効的な法整備を放置しています",
+      "sign_why3": "市民からの支持の声が、立法府・司法府への働きかけに直結します",
+      "sign_why4": "署名・応援メッセージは裁判の記録として残され、世論形成にも活用します",
+      "contact_h": "お問い合わせ",
+      "contact_intro": "取材・原告参加のご相談・その他のお問い合わせは、Googleフォームよりご連絡ください。弁護士・原告団にて対応いたします。",
+      "contact_gform_btn": "📝 お問い合わせフォームを開く",
+      "contact_privacy": "※ いただいた情報は弁護士・原告団のみで管理します。"
     },
     "en": {
       "hero_sub": "Nearly 30 plaintiffs united to seek state compensation against the government's prolonged failure to legislate against child abduction. The freedom of parents to raise their children and children to be raised by their parents is a fundamental right protected under Article 13 of the Constitution.",
@@ -47,10 +85,22 @@
       "ov_filed": "March 23, 2026",
       "ov_court": "Tokyo District Court, Civil Division",
       "ov_def": "The State (rep. by the Minister of Justice)",
-      "ov_atty": "Attorney Satoshi Sakka (Sakka Law Office, Okayama)",
-      "ov_amount": "¥55,000 per plaintiff(¥1.65M total)",
-      "ov_value": "¥1,485,000<br>Filing Fee: ¥13,000"
+      "ov_atty": "Attorney Satoshi Sakka<br>(Sakka Law Office, Okayama)",
+      "ov_amount": "¥55,000 per plaintiff<br>(¥1.65M total)",
+      "ov_value": "¥1,485,000<br>Filing Fee: ¥13,000",
+      "sign_cta_h": "Add Your Signature",
+      "sign_cta_p": "Your signature is a powerful push for the legislature and judiciary.<br>Signatures are collected via an external Google Form.",
+      "sign_open_btn": "✍️ Open the Signature Form",
+      "sign_why_h": "Why Your Signature Matters",
+      "sign_why1": "Thousands of parental child abductions occur in Japan every year, causing severe and ongoing human rights violations for separated parents and children.",
+      "sign_why2": "Despite ratifying the UN Convention on the Rights of the Child, Japan has failed to enact effective domestic legislation.",
+      "sign_why3": "Public support directly strengthens advocacy with the legislature and judiciary.",
+      "sign_why4": "Signatures and messages of support are preserved as part of the court record and used in public awareness efforts.",
+      "contact_h": "Contact",
+      "contact_intro": "For press, plaintiff enquiries, or other questions, please use the Google Form below. Our legal team will respond.",
+      "contact_gform_btn": "📝 Open Contact Form",
+      "contact_privacy": "* Information provided will be managed solely by the legal team and plaintiff group."
     }
   },
-  "updatedAt": "2026-05-02T12:35:22.935Z"
+  "updatedAt": "2026-05-19T11:17:52.568Z"
 }
