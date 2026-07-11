@@ -57,9 +57,9 @@
     }
   ],
   "settings": {
-    "signFormUrl": "",
-    "contactFormUrl": "",
-    "complaintPdfPath": ""
+    "signFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLScb4YbetX2vZ5riqg_BOZFYqWPWzVoTAxoBxHeVE7rJwM3hpw/viewform?usp=dialog",
+    "contactFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdnyGmYBLkvMJHYgB1i0rxNpX6f5GTMKzsNZTf_VEbt1MlyAg/viewform",
+    "complaintPdfPath": "pdfs/sojo.pdf"
   },
   "content": {
     "stat1_n": "≈30",
