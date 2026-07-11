@@ -169,6 +169,17 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
 .sign-cta-box p{font-size:13px;color:rgba(255,255,255,0.85);margin-bottom:18px;line-height:1.7}
 .sign-cta-box .pdf-dl{background:#e8c84a;color:var(--navy);font-weight:700}
 .sign-cta-box .pdf-dl:hover{background:#f0d660}
+/* Rolling supporter messages */
+.msg-marquee-wrap{margin-bottom:24px}
+.msg-marquee-h{font-family:var(--serif);font-size:15px;color:var(--navy);margin-bottom:12px;text-align:center}
+.msg-marquee{overflow:hidden;position:relative;width:100%;padding:4px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.msg-track{display:inline-flex;gap:14px;white-space:nowrap;will-change:transform;animation:msg-scroll 40s linear infinite}
+.msg-marquee:hover .msg-track{animation-play-state:paused}
+@keyframes msg-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.msg-card{flex:0 0 clamp(220px,70vw,280px);white-space:normal;background:var(--navy-pale);border:1px solid #d0d8ea;border-left:3px solid var(--gold);border-radius:8px;padding:12px 16px;box-sizing:border-box}
+.msg-card-body{font-size:13px;color:var(--text-muted);line-height:1.65;position:relative;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.msg-card-by{font-size:11px;color:var(--navy);font-weight:600;margin-top:8px;text-align:right}
+@media (prefers-reduced-motion: reduce){.msg-marquee{overflow-x:auto}.msg-track{animation:none}}
 .sign-why{background:var(--navy-pale);border-radius:10px;padding:20px;margin-bottom:24px}
 .sign-why h3{font-family:var(--serif);font-size:15px;color:var(--navy);margin-bottom:12px}
 .sign-why ul{list-style:none;padding:0}
@@ -419,6 +430,13 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
       </div>
     </div>
 
+    <div class="msg-marquee-wrap" id="msg-marquee-wrap" style="display:none">
+      <h3 class="msg-marquee-h" data-i18n="msg_h">💬 賛同者からの応援メッセージ</h3>
+      <div class="msg-marquee" aria-label="賛同者からの応援メッセージ">
+        <div class="msg-track" id="msg-track"></div>
+      </div>
+    </div>
+
     <div class="sign-why">
       <h3 data-i18n="sign_why_h">なぜ署名が必要か</h3>
       <ul>
@@ -554,6 +572,7 @@ var I18N = {
     sign_why2:'日本は児童の権利条約を批准しながら、国内の実効的な法整備を放置しています',
     sign_why3:'市民からの支持の声が、立法府・司法府への働きかけに直結します',
     sign_why4:'署名・応援メッセージは裁判の記録として残され、世論形成にも活用します',
+    msg_h:'💬 賛同者からの応援メッセージ', msg_anon:'— 匿名の賛同者より',
     contact_h:'お問い合わせ',
     contact_intro:'取材・原告参加のご相談・その他のお問い合わせは、Googleフォームよりご連絡ください。弁護士・原告団にて対応いたします。',
     contact_gform_btn:'📝 お問い合わせフォームを開く',
@@ -633,6 +652,7 @@ var I18N = {
     sign_why2:'Despite ratifying the UN Convention on the Rights of the Child, Japan has failed to enact effective domestic legislation.',
     sign_why3:'Public support directly strengthens advocacy with the legislature and judiciary.',
     sign_why4:'Signatures and messages of support are preserved as part of the court record and used in public awareness efforts.',
+    msg_h:'💬 Messages of Support', msg_anon:'— from an anonymous supporter',
     contact_h:'Contact',
     contact_intro:'For press, plaintiff enquiries, or other questions, please use the Google Form below. Our legal team will respond.',
     contact_gform_btn:'📝 Open Contact Form',
@@ -697,6 +717,13 @@ var articles = [
 ];
 
 /* ────────────────────────────────────────────────────────────────────────────── */
+/* Supporter messages — 承認したメッセージのみ手動で追加。氏名は載せない（匿名表示）   */
+/* 例: { text_ja: '応援しています', text_en: 'Standing with you' }  ※text_enは任意    */
+/* data.json の "messages" 配列でも上書き可能                                       */
+/* ────────────────────────────────────────────────────────────────────────────── */
+var messages = [];
+
+/* ────────────────────────────────────────────────────────────────────────────── */
 /* App logic                                                                     */
 /* ────────────────────────────────────────────────────────────────────────────── */
 var currentLang = 'ja';
@@ -724,6 +751,27 @@ function setLang(lang) {
   renderTL();
   renderArt();
   renderHomePreview();
+  renderMessages();
+}
+
+function renderMessages() {
+  var track = document.getElementById('msg-track');
+  var wrap  = document.getElementById('msg-marquee-wrap');
+  if (!track || !wrap) return;
+  var d = I18N[currentLang];
+  var list = (typeof messages !== 'undefined' && Array.isArray(messages)) ? messages : [];
+  // 名前は一切表示しない（匿名固定）。本文のみ表示。
+  var cards = list.map(function(m) {
+    var text = (currentLang === 'en' && m.text_en) ? m.text_en : (m.text_ja || m.text_en || '');
+    if (!text) return '';
+    return '<div class="msg-card"><div class="msg-card-body">' + escHtml(text) + '</div>' +
+           '<div class="msg-card-by">' + d.msg_anon + '</div></div>';
+  }).filter(Boolean);
+  if (!cards.length) { wrap.style.display = 'none'; track.innerHTML = ''; return; }
+  wrap.style.display = '';
+  // 継ぎ目のないループのため2周分を並べ、-50%までスクロールさせる
+  track.innerHTML = cards.join('') + cards.join('');
+  track.style.animationDuration = Math.max(24, cards.length * 6) + 's';
 }
 
 function goPage(id, btn) {
@@ -903,6 +951,7 @@ document.addEventListener('keydown', function(e) {
 renderTL();
 renderArt();
 renderHomePreview();
+renderMessages();
 
 /* ────────────────────────────────────────────────────────────────────────────── */
 /* Dynamic data loading: try to fetch data.json (overrides defaults if present)   */
@@ -917,6 +966,7 @@ renderHomePreview();
       if (!data) return;
       if (Array.isArray(data.entries))  entries  = data.entries;
       if (Array.isArray(data.articles)) articles = data.articles;
+      if (Array.isArray(data.messages)) messages = data.messages;
 
       // Apply runtime settings (URLs, PDF path)
       if (data.settings) {
