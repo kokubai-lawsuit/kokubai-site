@@ -1,5 +1,6 @@
 admin.html
 admin/
+_preview*.html
 *.admin.html
 pdfs/*.pdf
 !pdfs/sojo.pdf
