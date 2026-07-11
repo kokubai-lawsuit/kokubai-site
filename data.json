@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "date": "2026-07-15",
+      "tag": "hearing",
+      "title_ja": "初回期日",
+      "body_ja": "期日決定：７月１５日午後４時～\n\n★東京地方裁判所\n　水口書記官\n\n★３０人国賠の損害賠償請求事件",
+      "title_en": "Initial due date",
+      "body_en": "Deadline: July 15th from 4pm\n\n★Tokyo District Court\n　Mizuguchi Clerk\n\n★State Compensation Lawsuit Filed by 30 Plaintiffs",
+      "isComplaint": false,
+      "id": 1783742668679
+    },
+    {
       "id": 1,
       "date": "2026-03-23",
       "tag": "submit",
@@ -47,9 +57,9 @@
     }
   ],
   "settings": {
-    "signFormUrl": "https://docs.google.com/forms/d/1117Wnvop-AKmK7e-II3X84Ow2MgHpBknbA_xFDnD_Rc/edit",
-    "contactFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdnyGmYBLkvMJHYgB1i0rxNpX6f5GTMKzsNZTf_VEbt1MlyAg/viewform",
-    "complaintPdfPath": "pdfs/sojo.pdf"
+    "signFormUrl": "",
+    "contactFormUrl": "",
+    "complaintPdfPath": ""
   },
   "content": {
     "stat1_n": "≈30",
@@ -69,10 +79,10 @@
       "sign_cta_p": "あなたの一筆が、立法府・司法府への大きな後押しになります。<br>署名は外部のGoogleフォームから受け付けています。",
       "sign_open_btn": "✍️ 署名フォームを開く",
       "sign_why_h": "なぜ署名が必要か",
-      "sign_why1": "子の連れ去りは毎年数千件起きており、引き離された親と子が深刻な人権侵害を受け続けています。",
-      "sign_why2": "日本は児童の権利条約を批准しながら、国内の実効的な法整備を放置しています。",
-      "sign_why3": "市民からの支持の声が、立法府・司法府への働きかけになります。",
-      "sign_why4": "署名・応援メッセージは活動者の励みになります。",
+      "sign_why1": "子の連れ去りは毎年数千件起きており、引き離された親と子が深刻な人権侵害を受け続けています",
+      "sign_why2": "日本は児童の権利条約を批准しながら、国内の実効的な法整備を放置しています",
+      "sign_why3": "市民からの支持の声が、立法府・司法府への働きかけに直結します",
+      "sign_why4": "署名・応援メッセージは裁判の記録として残され、世論形成にも活用します",
       "contact_h": "お問い合わせ",
       "contact_intro": "取材・原告参加のご相談・その他のお問い合わせは、Googleフォームよりご連絡ください。弁護士・原告団にて対応いたします。",
       "contact_gform_btn": "📝 お問い合わせフォームを開く",
@@ -102,5 +112,5 @@
       "contact_privacy": "* Information provided will be managed solely by the legal team and plaintiff group."
     }
   },
-  "updatedAt": "2026-05-19T11:21:12.732Z"
+  "updatedAt": "2026-07-11T04:08:15.404Z"
 }
