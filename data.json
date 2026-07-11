@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "id": 1783742668679,
+      "date": "2026-07-15",
+      "tag": "hearing",
+      "title_ja": "初回期日",
+      "body_ja": "期日決定：７月１５日午後４時～\n\n★東京地方裁判所\n　水口書記官\n\n★３０人国賠の損害賠償請求事件",
+      "title_en": "Initial due date",
+      "body_en": "Deadline: July 15th from 4pm\n\n★Tokyo District Court\n　Mizuguchi Clerk\n\n★State Compensation Lawsuit Filed by 30 Plaintiffs",
+      "isComplaint": false
+    },
+    {
       "id": 1,
       "date": "2026-03-23",
       "tag": "submit",
@@ -109,9 +119,9 @@
     }
   ],
   "settings": {
-    "signFormUrl": "",
-    "contactFormUrl": "",
-    "complaintPdfPath": ""
+    "signFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLScb4YbetX2vZ5riqg_BOZFYqWPWzVoTAxoBxHeVE7rJwM3hpw/viewform?usp=dialog",
+    "contactFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdnyGmYBLkvMJHYgB1i0rxNpX6f5GTMKzsNZTf_VEbt1MlyAg/viewform",
+    "complaintPdfPath": "pdfs/sojo.pdf"
   },
   "content": {
     "stat1_n": "≈30",
