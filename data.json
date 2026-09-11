@@ -41,12 +41,26 @@
   ],
   "articles": [
     {
+      "date": "2026-06-22",
+      "tag": "media",
+      "title_ja": "成長を見守りたいだけなのに…“連れ去り”で引き裂かれた親子　弁護士や自治体が手続きを指南か、「国際的に異常」という声も",
+      "title_en": "\"We only want to watch them grow up\": Parents and children torn apart by child abduction — lawyers and local governments allegedly coaching the process, with some calling it \"internationally abnormal\"",
+      "body_ja": "“子の連れ去り”に遭った親たちの声を取材した記事。今春、父母ら約30人が法規制と賠償を国に求めて東京地裁に起こした本訴訟を紹介。",
+      "body_en": "A feature on parents affected by child abduction, covering this lawsuit filed this spring in the Tokyo District Court by about 30 parents seeking legal regulation and compensation from the State.",
+      "source_ja": "共同通信（47NEWS／Yahoo!ニュース）",
+      "source_en": "Kyodo News (47NEWS / Yahoo! News)",
+      "url": "https://news.yahoo.co.jp/articles/1955fdaff888d36e7d04b2acc87d665e5f6f5b1e",
+      "id": 1789101332806
+    },
+    {
       "date": "2026-03-07",
       "tag": "media",
       "title_ja": "子連れ去り規制求め、国を提訴へ　父母ら約30人、1人5万円請求",
       "title_en": "Seeking to regulate the removal of children, about 30 parents filed a lawsuit against the country, claiming 50,000 yen per person",
       "url": "https://news.yahoo.co.jp/articles/298cbb98a4db9af6e05264a17ec0c8118127fb60",
-      "id": 1777717664343
+      "id": 1777717664343,
+      "source_ja": "共同通信（Yahoo!ニュース）",
+      "source_en": "Kyodo News (Yahoo! News)"
     },
     {
       "id": 3,
