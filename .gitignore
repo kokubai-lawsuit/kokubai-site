@@ -4,6 +4,7 @@ _preview*.html
 *.admin.html
 pdfs/*.pdf
 !pdfs/sojo.pdf
+!pdfs/2026-09-18_*.pdf
 !pdfs/.gitkeep
 .env
 .env.*

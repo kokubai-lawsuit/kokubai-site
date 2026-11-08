@@ -13,10 +13,29 @@
     {
       "date": "2026-09-18",
       "tag": "response",
-      "title_ja": "書面提出予定",
-      "title_en": "To be submitted",
+      "title_ja": "被告書面提出",
+      "title_en": "Defendant's brief filed",
       "isComplaint": false,
-      "id": 1785166118449
+      "id": 1785166118449,
+      "body_ja": "被告（国）が準備書面(1)・証拠説明書・乙第1〜8号証を提出。",
+      "body_en": "The defendant (the State) filed Preparatory Brief (1), an evidence description, and Exhibits Otsu Nos. 1–8.",
+      "files": [
+        {
+          "name": "2026-09-18_hikoku_junbishomen1.pdf",
+          "label_ja": "被告 準備書面(1)",
+          "label_en": "Defendant's Preparatory Brief (1)"
+        },
+        {
+          "name": "2026-09-18_hikoku_shoko_setsumeisho.pdf",
+          "label_ja": "被告 証拠説明書",
+          "label_en": "Defendant's Evidence Description"
+        },
+        {
+          "name": "2026-09-18_otsu1-8.pdf",
+          "label_ja": "乙第1〜8号証",
+          "label_en": "Exhibits Otsu Nos. 1–8"
+        }
+      ]
     },
     {
       "id": 1783742668679,
@@ -214,5 +233,5 @@
       "contact_privacy": "* Information provided will be managed solely by the legal team and plaintiff group."
     }
   },
-  "updatedAt": "2026-07-27T15:47:04.983Z"
+  "updatedAt": "2026-11-08T08:28:16.269Z"
 }

@@ -149,7 +149,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
 .tl-tag.news{background:var(--red-pale);color:var(--red)}
 .tl-ttl{font-size:14px;font-weight:500;color:var(--navy);margin-bottom:4px}
 .tl-body{font-size:12px;color:var(--text-muted);line-height:1.6}
-.tl-file-row{margin-top:8px}
+.tl-file-row{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
 .tl-file{display:inline-flex;align-items:center;gap:5px;background:var(--navy-pale);color:var(--navy);font-size:11px;padding:4px 12px;border-radius:5px;text-decoration:none}
 .tl-file:hover{background:#d0d8ea}
 .art-card{background:var(--white);border:1px solid var(--border);border-radius:9px;padding:16px;margin-bottom:12px;transition:border-color 0.2s}
@@ -815,6 +815,11 @@ function renderTL() {
     var fileHTML = '';
     if (e.isComplaint && COMPLAINT_PDF_PATH) {
       fileHTML = '<div class="tl-file-row"><button class="tl-file" style="cursor:pointer;background:var(--navy-pale);border:none;font:inherit" onclick="openComplaintPDF()">📄 ' + (currentLang === 'en' ? 'View complaint PDF' : '訴状PDFを開く') + '</button></div>';
+    } else if (Array.isArray(e.files) && e.files.length) {
+      fileHTML = '<div class="tl-file-row">' + e.files.map(function(f) {
+        var label = (currentLang === 'en' && f.label_en) ? f.label_en : (f.label_ja || f.name);
+        return '<a class="tl-file" href="pdfs/' + encodeURIComponent(f.name) + '" target="_blank" rel="noopener">📄 ' + escHtml(label) + '</a>';
+      }).join('') + '</div>';
     } else if (e.file) {
       fileHTML = '<div class="tl-file-row"><a class="tl-file" href="pdfs/' + encodeURIComponent(e.file) + '" target="_blank" rel="noopener">📄 ' + escHtml(e.file) + '</a></div>';
     }
