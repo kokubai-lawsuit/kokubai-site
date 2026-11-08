@@ -1,12 +1,32 @@
 {
   "entries": [
     {
-      "date": "2026-10-09",
+      "date": "2027-01-26",
       "tag": "hearing",
       "title_ja": "次回期日",
-      "body_ja": "次回期日決定：１０月０９日午前１１時～ ★東京地方裁判所  ★３０人国賠の損害賠償請求事件",
-      "title_en": "Next due date",
-      "body_en": "Next deadline decision: October 09, 11:00 am - ★Tokyo District Court  ★30 people national compensation claim case",
+      "body_ja": "次回期日決定：２０２７年１月２６日（火）午前１１時～ ★東京地方裁判所  ★３０人国賠の損害賠償請求事件",
+      "title_en": "Next hearing",
+      "body_en": "Next hearing: Tuesday, January 26, 2027, 11:00 am - ★Tokyo District Court  ★30 people national compensation claim case",
+      "isComplaint": false,
+      "id": 1794127232584
+    },
+    {
+      "date": "2027-01-12",
+      "tag": "submit",
+      "title_ja": "原告書面提出予定",
+      "body_ja": "２０２７年１月１２日（火）までに原告側が書面を提出予定。",
+      "title_en": "Plaintiffs' brief due",
+      "body_en": "The plaintiffs are scheduled to file their brief by Tuesday, January 12, 2027.",
+      "isComplaint": false,
+      "id": 1794127232583
+    },
+    {
+      "date": "2026-10-09",
+      "tag": "hearing",
+      "title_ja": "第2回期日",
+      "body_ja": "期日：１０月０９日午前１１時～ ★東京地方裁判所  ★３０人国賠の損害賠償請求事件",
+      "title_en": "Second hearing",
+      "body_en": "Hearing: October 9, 11:00 am - ★Tokyo District Court  ★30 people national compensation claim case",
       "isComplaint": false,
       "id": 1785166223284
     },
@@ -233,5 +253,5 @@
       "contact_privacy": "* Information provided will be managed solely by the legal team and plaintiff group."
     }
   },
-  "updatedAt": "2026-11-08T08:28:16.269Z"
+  "updatedAt": "2026-11-08T08:40:32.583Z"
 }
